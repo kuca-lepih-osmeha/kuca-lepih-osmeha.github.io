@@ -1,0 +1,1540 @@
+@font-face {font-family:"Open Sans";src:url("OpenSans-Regular.eot?") format("eot"),url("OpenSans-Regular.woff") format("woff"),url("OpenSans-Regular.ttf")
+format("truetype"),url("OpenSans-Regular.svg#OpenSans") format("svg");font-weight:normal;font-style:normal;}
+
+@font-face {font-family:"DejaVu Sans Condensed";src:url("DejaVuSansCondensed.eot?") format("eot"),url("DejaVuSansCondensed.woff") format("woff"),url("DejaVuSansCondensed.ttf")
+format("truetype"),url("DejaVuSansCondensed.svg#DejaVuSansCondensed") format("svg");font-weight:normal;font-style:normal;}
+
+
+html, body, div, ul, ol, li, h1, h2, h3, h4, h5, h6, img, a, p, canvas {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+a {
+    text-decoration: none;
+    color: gray;
+    font: normal normal normal 0.96em 'Open Sans',sans-serif;
+}
+
+/***HEADER + NAVIGATION***/
+
+.line_1, .line_2 {
+    display: inline-block;
+    position: relative;
+    width: 100%;
+    height: 15px;
+}
+
+.el_1, .el_3, .el_2 {
+    display: inline-block;
+    position: absolute;
+    top: 0px;
+    width: 40%;
+    height: 10px;
+    background-color: rgba(2, 184, 191, 1);
+}
+
+.el_2 {
+    background-color: rgba(25, 144, 206, 1);
+    left: 30%
+}
+
+.el_3 {
+    background-color: rgba(7, 188, 131, 1);
+    width: 30%;
+    left: 70%;
+}
+
+.header {
+    max-height: 140px;
+    max-width: 980px;
+    margin: 0 auto;
+}
+
+.logo, .logo img {
+    display: inline-block;
+}
+
+.logo {
+    display: inline-block;
+    position: relative;
+    top: -5px;
+    width: 14%
+}
+
+.logo img {
+    float: right;
+    margin-right: 12%;
+}
+
+.headline {
+    display: inline-block;
+    position: relative;
+    width: 85%;
+    height: 84px;
+    margin: 0 auto;
+}
+
+.head_left, .head_right {
+    display: inline-block;
+    position: relative;
+    min-width: 350px;
+    height: inherit;
+}
+
+.head_left {
+    top: -50px;
+}
+
+.head_right {
+    height: 50px;
+    min-width: 150px;
+    max-width: 250px;
+    top: -20px;
+    float: right;
+}
+
+h6 {
+    position: relative;
+    color: #116089;
+    font: normal normal normal 24px/1.4em 'Open Sans',sans-serif;
+    top: 20px;
+}
+
+.hamburger {
+    display: none;
+}
+
+.headline h1 {
+    position: relative;
+    display: inline-block;
+    top: 30px;
+    color: #116089;
+    font: normal normal normal 2.6em 'Open Sans', sans-serif;
+}
+
+.headline p {
+    position: relative;
+    display:block;
+    color: #116089;
+    top: 0;
+    width: 100%;
+    text-align: right;
+    font: normal normal normal 1em 'Open Sans',sans-serif;
+    margin-right: 5%;
+}
+
+.nav_bar{
+    display:block;
+    background-color: rgb(242, 242, 242);
+    width: 100%;
+}
+
+.nav {
+    display: block;
+    width: 720px;
+    margin: 0 auto;
+}
+
+.li, .li_1 {
+    display: inline-block;
+    padding: 10px;
+}
+
+.li a:hover {
+    color: #02B8BF;
+    height: 18px;
+}
+
+/***SIDEBAR***/
+
+.side_bar_container {
+    display: block;
+    position: fixed;
+    height: 20px;
+    width: 10%;
+    top: 0;
+    margin: 20% 12% auto 0;
+    left: 85%;
+    z-index: 9999;
+}
+
+.side_bar {
+    display: block;
+    float: right;
+    height: 330px;
+    width: 170px;
+    margin: 20% 5% auto 0;
+}
+
+.bullet {
+    display: inline-block;
+    float: right;
+    width: 7px;
+    height: 7px;
+    border-radius: 7px;
+    border: 2px solid #083045;
+    margin: 4px 5px 0 5px;
+}
+
+.bullet:hover, .bullet:active {
+    background-color: #083045;
+}
+
+.side_bar a {
+    display: inline-block;
+    color: #083045;
+}
+
+.current > span {
+    left: -10px !important;
+}
+
+.current > div {
+    background-color: #083045 !important;
+}
+
+.sb {
+    display: block;
+    margin-top: 15px;
+    text-align: right;
+    overflow: hidden;
+    transition: left 0.4s;
+}
+
+.sb a {
+    height: 22px;
+    font-size: 16px;
+}
+
+    /*animations*/
+
+.left, .right {
+    position: relative;
+    height: 23px;
+    transition: left 0.4s;
+}
+
+.left{
+    left: 180px;
+}
+
+.sb:hover .left{
+    left: -10px;
+}
+
+.right{
+    left: -10px;
+}
+
+.sb:hover .right{
+    left: 180px;
+}
+
+
+/***IMG + OVERLAY***/
+
+
+.wrapper {
+    width: 100%;
+    height: 842px;
+    background-color: rgba(111, 111, 111, 0.5);
+    background-image: url("../images/ord1.jpg");
+    background-position: center;
+}
+
+.nav_2 {
+    position: relative;
+    top: 562px;
+    max-width: 980px;
+    height: 280px;
+    margin: 0 auto;
+}
+
+.rpr, .gll {
+    display: inline-block;
+    position: relative;
+    width: 33%;
+    height: 270px;
+}
+
+.rpr a {
+    position: relative;
+    top: 100px;
+}
+
+#rpr_1, #gll_1 {
+    background-color: rgba(2, 184, 191, 0.5);
+    border-bottom: 10px solid rgba(2, 184, 191, 1);
+    left: 0.5%;
+}
+
+#rpr_2, #gll_2 {
+    background-color: rgba(25, 144, 206, 0.5);
+    border-bottom: 10px solid rgba(25, 144, 206, 1);
+}
+
+#rpr_3, #gll_3 {
+    background-color: rgba(7, 188, 131, 0.5);
+    border-bottom: 10px solid rgba(7, 188, 131, 1);
+    left: -0.5%;
+}
+
+
+h5 {
+    text-align: center;
+    color: white;
+}
+
+.rh_1 {
+    font: normal normal normal 1.8em 'Open Sans',sans-serif;
+    width: 99%;
+}
+
+.rh_2 {
+    font: normal normal bold 1.8em 'Open Sans',sans-serif;
+    width: 99%;
+}
+
+.rh_3 {
+    display: none;
+    font: normal normal bold 1.8em 'Open Sans',sans-serif;
+    width: 99%;
+
+}
+
+/***CONTENT***/
+
+.content {
+    width: 100%;
+}
+
+.cnt_1, .cnt_2, .cnt_3, .cnt_4, .cnt_5, .cnt_6 {
+    width: 100%;
+    height: 700px;
+}
+
+.parallax-window {
+    min-height: 580px;
+    background: transparent;
+}
+
+.block {
+    width: 980px;
+    height: inherit;
+    margin: 0 auto;
+}
+
+.span {
+    height: 1px;
+    width: 100%;
+    background-color: inherit;
+}
+
+h2 {
+    display: block;
+    width: 980px;
+    font: normal normal bold 70px/1.4em 'Open Sans',sans-serif;
+    color: #02B8BF;
+    text-align: center;
+    margin: 50px auto 0 auto;
+}
+
+.cnt_1 {
+    height: 620px;
+}
+
+.cnt_1 p {
+    width: 800px;
+    margin: 30px auto 0 auto;
+    font: normal normal normal 1.2em 'open sans',sans-serif;
+    color: #02B8BF;
+    text-align: justify;
+}
+
+.cnt_2 {
+    height: 1150px;
+}
+
+.cnt_3 {
+    height: 1150px;
+    background-color: rgba(17, 96, 137, 0.9);
+}
+
+.cnt_2 h2, .cnt_3 h2 {
+    color: white;
+}
+
+.srvc, .shld {
+    display: block;
+    width: inherit;
+    height: 900px;
+    margin-top: 150px;
+}
+
+.srvc_l, .srvc_r {
+    display: inline-block;
+    width: 480px;
+    height: 160px;
+    background-color: rgba(256, 256, 256, 0.1);
+    float: left;
+    margin-top: 20px;
+}
+
+.srvc_r {
+    float: right;
+}
+
+.srvc_l h6, .srvc_r h6 {
+    text-align: center;
+    color: white;
+    margin-bottom: 30px;
+}
+
+.srvc p {
+    width: 420px;
+    text-align: center;
+    color: white;
+    margin: 30px auto 0 auto;
+    font: normal normal normal 1.2em 'open sans',sans-serif;
+}
+
+.cnt_6 h6, .cnt_6 p {
+    color: gray;
+}
+
+.cnt_6 {
+    height: 1100px;
+}
+
+.shld{
+    height: 1000px;
+    margin: 0 auto;
+}
+
+#pregled {
+    height: 60px;
+}
+
+#bolest {
+    height: 434px;
+}
+
+#estetska {
+    height: 216px;
+}
+
+#paradont {
+    height: 170px;
+}
+
+#decja {
+    height: 172px;
+}
+
+#oralna {
+    height: 124px;
+}
+
+#protetika {
+    height: 410px;
+}
+
+#hijaluron {
+    height: 140px;
+}
+
+.dot, .dot_2 {
+    height: 18px;
+    border-bottom: 1px dotted gray;
+    margin: 2px auto 0 auto;
+    width: 450px;
+}
+
+.dot_2 {
+    height: 36px;
+}
+
+.shld .pp_l, .shld .pp_l2, .shld .pp_r, .shld .pp_r2 {
+    display: inline-block;
+    width: 346px;
+    float: left;
+    text-align: left;
+    margin: 0;
+}
+
+.shld .pp_l2 {
+    width: 300px;
+}
+
+.shld .pp_r, .shld .pp_r2 {
+    width: 90px;
+    float: right;
+    text-align: right;
+}
+
+.shld .pp_r2 {
+    width: 120px;
+}
+
+/***TEAM***/
+
+.cnt_3 {
+    height: 600px;
+}
+
+.dr {
+    display: inline-block;
+    width: 479px;
+    height: 300px;
+    margin-top: 50px;
+}
+
+.dr h6 {
+    color: white;
+    text-align: center;
+}
+
+.cnt_3 h2 {
+    position: relative;
+    top: 50px;
+}
+
+.pic_1, .pic_2 {
+    width: 222px;
+    margin: 50px auto 0 129px;
+    border-bottom: 8px solid rgba(2, 184, 191, 1);
+}
+
+.pic_2 {
+
+    border-bottom: 8px solid rgba(7, 188, 131, 1);
+}
+
+
+/***GALLERY***/
+
+.cnt_4 {
+    height: 1200px;
+}
+
+.nav_3 {
+    display: block;
+    position: relative;
+    width: 980px;
+    height: 40px;
+    margin: 50px auto 0 auto;
+}
+
+.cnt_4 .rh_2 {
+    margin-top: 12px;
+}
+
+.cnt_4 .rh_2:hover {
+    color: rgba(256, 256, 256, 0.7);
+
+}
+
+.before h5 {
+    display: none;
+}
+
+.gll{
+    height: 60px;
+    width: 49.5%;
+}
+
+#gll_1 {
+    left: 5px;
+    background-color: rgba(2, 184, 191, 0.7);
+}
+
+#gll_3 {
+    left: 1px;
+    background-color: rgba(7, 188, 131, 0.7);
+}
+
+.track {
+    display: block;
+    width: 970px;
+    height: 100px;
+    margin: 90px auto 0 auto;
+
+}
+
+.img_sm {
+    margin: 0 10px 0 10px;
+    position: relative;
+    left: -24px;
+}
+
+.img_sm img {
+    display: inline-block;
+    position: relative;
+    top: 18px;
+    border-bottom: 3px solid rgba(25, 144, 206, 0);
+    border-top: 3px solid rgba(25, 144, 206, 0);
+}
+
+.img_sm:hover img {
+    border: 3px solid rgba(25, 144, 206, 1);
+    top: 18px;
+}
+
+.img_sm:active img {
+    border: 3px solid rgba(25, 144, 206, 0.5);
+    top: 18px;
+}
+
+.prew {
+    display: block;
+    width: 970px;
+    margin: 50px auto 10px auto;
+}
+
+.prew img {
+    width: 980px;
+
+}
+
+.before {
+    display: inline-block;
+    width: 49.5%;
+    height: 30px;
+}
+
+.before h5 {
+    color: rgba(25, 144, 206, 1);
+    text-align: center;
+}
+
+/***CONTACT***/
+
+.cnt_5 {
+    height: 930px;
+}
+
+.cnt_5 .block {
+    margin-top: 80px;
+    height: 700px;
+}
+
+.adr, .wrk {
+    position: relative;
+    display: inline-block;
+    width: 49%;
+    height: 120px;
+    text-align: center;
+}
+
+.wrk {
+    top: -30px;
+}
+.vl {
+    position: relative;
+    top: 0;
+    display: inline-block;
+    width: 1px;
+    height: 120px;
+    background-color: gray;
+}
+
+.adr h6, .wrk h6 {
+    top: 0;
+    color: #333333;
+}
+
+.adr p, .wrk p {
+    font: normal normal normal 1.1em 'Open Sans', sans-serif;
+    color: gray;
+    margin-top: 10px;
+}
+
+.fb {
+    width: 980px;
+}
+
+.fb a {
+    display: block;
+    width: 50px;
+    height: 50px;
+    margin: 20px 0 0 46.77%;
+}
+
+.fb img {
+    width: 50px;
+    height: 50px;
+}
+
+.map {
+    display: inline-block;
+    height: 370px;
+    width: 100%;
+    margin-top: 80px;
+}
+
+.bottom_bar {
+    height: 10px;
+}
+
+.line_2 {
+    height: 10px;
+}
+
+.line_2 .el_1, .line_2 .el_2, .line_2 .el_3 {
+    height: 10px;
+}
+
+
+/*---------MODALS------------*/
+
+.modalDialog {
+    position: fixed;
+    font-family: Arial, Helvetica, sans-serif;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(222, 222, 222, 0.75);
+    z-index: 99999;
+    opacity:0;
+    -webkit-transition: opacity 400ms ease-in;
+    -moz-transition: opacity 400ms ease-in;
+    transition: opacity 400ms ease-in;
+    pointer-events: none;
+}
+
+.modalDialog:target {
+    opacity:1;
+    pointer-events: auto;
+}
+
+.modalDialog > div {
+    width: 50%;
+    height: 366px;
+    position: relative;
+    margin: 0 auto;
+    padding: 5px 20px 13px 20px;
+    background: rgba(255,255,255,1);
+    float: right;
+}
+
+.close {
+    display: block;
+    background: white;
+    color: #116089;
+    font-size: 1.1em;
+    line-height: 36px;
+    position: absolute;
+    right: 2%;
+    text-align: center;
+    top: 12px;
+    width: 36px;
+    border-radius: 18px;
+    margin-right: 6%;
+    text-decoration: none;
+    z-index: 999999;
+
+}
+
+.close:hover {
+    background: #116089;
+    color: white;
+}
+
+.nav_4 {
+    display: block;
+    position: relative;
+    width: 100%;
+    top: 55px;
+}
+
+.li_1 {
+    display: block;
+    border-top: 1px solid #116089;
+}
+
+.li_1 a {
+    color: #116089;
+}
+
+.li:hover {
+    color: white;
+    background: #116089
+}
+
+
+/*--------MEDIA QUERIES--------*/
+
+
+@media screen and (max-width: 480px){
+
+    body {
+        height: auto;
+    }
+
+
+    /*****HEADER****/
+
+
+
+    .header {
+        max-height: 175px;
+        max-width: 980px;
+    }
+
+    .logo {
+        width: 88px;
+        height: 88px;
+        display: block;
+        position: relative;
+        left: 4px;
+        background-image: url("../images/klo_sm.jpg");
+    }
+
+    .logo img {
+        display: none;
+    }
+
+    .headline {
+        width: 100%;
+    }
+
+    .head_right {
+        position: relative;
+        width: 280px;
+        float: right;
+        top: -150px;
+        margin-right: 4%;
+    }
+
+    .head_left {
+        width: 100%;
+        position: relative;
+        display: block;
+        top: -12px;
+
+    }
+
+    .head_left h6, h1 {
+        width: 100%;
+        text-align: center;
+        margin-right: 0;
+        margin-top: 12px;
+        font-weight: bolder;
+    }
+
+    .head_left h6 {
+        font-size: 1.1em;
+    }
+
+    .head_left h1 {
+        width: 100%;
+        float: right;
+        font-size: 160%;
+        text-align: center;
+        margin-top: 0;
+        color: white;
+        background-color: #116089;
+        padding-top: 15px;
+        padding-bottom: 15px;
+    }
+
+    .hamburger {
+        display: inline-block;
+        position: fixed;
+        width: 35px;
+        height: 35px;
+        top: 0px;
+        border-radius: 2px;
+        margin-top: 17px;
+        margin-left: 87%;
+        float: right;
+        z-index: 99999;
+    }
+
+    .stripe {
+        position: relative;
+        left: 2px;
+        width: 30px;
+        height: 5px;
+        margin-top: 3px;
+        background-color: #116089;
+        border: 1px solid white;
+    }
+
+    .nav_2 {
+        top: 280px;
+        width: 100%;
+    }
+
+    .rpr {
+        display: block;
+        width: 84%;
+        margin-left: 6%;
+        height: 60px;
+    }
+
+    #rpr_1, #rpr_2, #rpr_3 {
+        left: 2%;
+    }
+
+    .rpr a {
+        top: 0;
+    }
+
+    .rh_1 {
+        font-size: 1.4em;
+    }
+
+    .rh_2 {
+        font-size: 1.6em;
+    }
+
+    .nav {
+        display: none;
+    }
+
+
+
+    /*****CONTENT****/
+
+
+    .side_bar_container {
+        display: none;
+
+    }
+
+    #rpr_1, #gll_1 {
+        background-color: rgba(2, 184, 191, 0.8);
+        border-bottom: 7px solid rgba(2, 184, 191, 1);
+    }
+
+    #rpr_2, #gll_2 {
+        background-color: rgba(25, 144, 206, 0.8);
+        border-bottom: 7px solid rgba(25, 144, 206, 1);
+    }
+
+    #rpr_3, #gll_3 {
+        background-color: rgba(7, 188, 131, 0.8);
+        border-bottom: 7px solid rgba(7, 188, 131, 1);
+    }
+
+    .wrapper {
+        background-image: url("../images/ord1.jpg");
+        background-size: 160%;
+        height: 240px;
+        margin-bottom: 300px;
+    }
+
+    .overlay {
+        height: 200px;
+    }
+
+    .cnt_1, .cnt_2, .cnt_3, .cnt_4, .cnt_5, .cnt_6 {
+        width: 100%;
+    }
+
+    .block {
+        width: 84%;
+        margin-left: 8%;
+    }
+
+    .cnt_1 h2, .cnt_2 h2, .cnt_3 h2, .cnt_4 h2, .cnt_5 h2, .cnt_6 h2 {
+        width: 100%;
+        font-size: 1.8em;
+    }
+
+    .cnt_1 {
+        height: 800px;
+    }
+
+    .cnt_1 p {
+        width: 100%;
+        text-align: justify;
+        font-size: 1em;
+    }
+
+    .cnt_2 {
+        height: 1400px;
+    }
+
+    .srvc_r, .srvc_l, .srvc {
+        width: 100%;
+        float: none;
+    }
+
+    .srvc_r, .srvc_l {
+        height: auto;
+    }
+
+    .srvc_r p, .srvc_l p {
+        width: 88%;
+        margin-bottom: 10px;
+        font-size: 1em;
+    }
+
+    .srvc {
+        margin-top: 38px;
+    }
+
+    .cnt_6 {
+        height: 3000px;
+    }
+
+    .shld {
+        width: 100%;
+    }
+
+    .dot, .dot_2 {
+        border: none;
+        width: 100%;
+        height: 36px;
+    }
+
+    .shld .srvc_l, .shld .srvc_r {
+        height: auto;
+    }
+
+    #pregled, #protetika, #bolest, #decja, #oralna, #estetska, #paradont {
+        height: auto;
+    }
+
+    .pp_l {
+        width: 100% !important;
+    }
+
+    .dot_2 {
+        height: 60px;
+    }
+
+    .cnt_3 {
+        height: 950px;
+    }
+
+    .dr {
+        width: 100%;
+    }
+
+    .pic_1, .pic_2 {
+        width: 80%;
+        margin: 50px auto 0 10%;
+    }
+
+    .cnt_4 {
+        display: none;
+    }
+
+    .cnt_5 {
+        height: 800px;
+    }
+
+    .adr, .wrk {
+        width: 100%;
+    }
+
+    .adr {
+        height: 200px;
+    }
+
+    .vl {
+        display: none;
+    }
+
+    .fb {
+        width: 100%;
+    }
+    .fb a {
+        margin: 0px 0 20px 43.27%;
+    }
+
+    .map {
+        height: 200px;
+        top: -40px;
+    }
+
+    .bottom_bar {
+        display: block;
+        position: relative;
+        height: 20px;
+    }
+
+
+
+}
+
+@media screen and (min-width: 481px) and (max-width: 810px) {
+
+    .header {
+        max-height: 155px;
+        max-width: 980px;
+    }
+
+    .logo {
+        width: 88px;
+        height: 88px;
+        display: block;
+        position: relative;
+        left: 4px;
+        background-image: url("../images/klo_sm.jpg");
+    }
+
+    .logo img {
+        display: none;
+    }
+
+    .headline {
+        width: 100%;
+        height: 55px;
+    }
+
+    .head_right {
+        position: relative;
+        width: 280px;
+        float: right;
+        top: -202px;
+        margin-right: 12%;
+    }
+
+    .head_left {
+        width: 100%;
+        position: relative;
+        display: block;
+        top: -75px;
+
+    }
+
+    .head_left h6, h1 {
+        width: 100%;
+        text-align: center;
+        margin-right: 0;
+        margin-top: 8px;
+        font-weight: bolder;
+    }
+
+    .head_left h6 {
+        font-size: 1.6em;
+    }
+
+    .head_left h1 {
+        width: 100%;
+        float: right;
+        font-size: 200%;
+        text-align: center;
+        margin-top: 0;
+        color: white;
+        background-color: #116089;
+        padding-top: 15px;
+        padding-bottom: 15px;
+    }
+
+    .hamburger {
+        display: inline-block;
+        position: fixed;
+        width: 35px;
+        height: 35px;
+        top: 0px;
+        border-radius: 2px;
+        margin-top: 17px;
+        margin-left: 91%;
+        z-index: 99999;
+    }
+
+    .stripe {
+        position: relative;
+        left: 2px;
+        width: 30px;
+        height: 5px;
+        margin-top: 3px;
+        background-color: #116089;
+        border: 1px solid white;
+    }
+
+    .nav_2 {
+        top: 250px;
+        width: 100%;
+    }
+
+    .rpr {
+        display: block;
+        width: 94%;
+        margin-left: 6%;
+        height: 60px;
+    }
+
+    #rpr_1, #rpr_2, #rpr_3 {
+        left: -3%;
+    }
+
+    .rpr a {
+        top: 0;
+    }
+
+    .rh_1, .rh_2 {
+        display: none;
+    }
+
+    .rh_3 {
+        display: block;
+        position: relative;
+        top: 12px;
+    }
+
+    .nav {
+        display: none;
+    }
+
+
+    /*****CONTENT****/
+
+    .side_bar_container {
+        display: none;
+    }
+    .sb {
+        margin-top: 10px;
+    }
+
+    .sb a {
+        height: 20px;
+        font-size: 16px;
+    }
+
+    #rpr_1, #gll_1 {
+        background-color: rgba(2, 184, 191, 0.8);
+        border-bottom: 7px solid rgba(2, 184, 191, 1);
+    }
+
+    #rpr_2, #gll_2 {
+        background-color: rgba(25, 144, 206, 0.8);
+        border-bottom: 7px solid rgba(25, 144, 206, 1);
+    }
+
+    #rpr_3, #gll_3 {
+        background-color: rgba(7, 188, 131, 0.8);
+        border-bottom: 7px solid rgba(7, 188, 131, 1);
+    }
+
+    .wrapper {
+        background-image: url("../images/ord1.jpg");
+        background-size: 160%;
+        height: 240px;
+        margin-bottom: 300px;
+    }
+
+    .overlay {
+        height: 200px;
+    }
+
+    .cnt_1, .cnt_2, .cnt_3, .cnt_4, .cnt_5, .cnt_6 {
+        width: 100%;
+    }
+
+    .block {
+        width: 84%;
+        margin-left: 8%;
+    }
+
+    .cnt_1 h2, .cnt_2 h2, .cnt_3 h2, .cnt_4 h2, .cnt_5 h2, .cnt_6 h2 {
+        width: 100%;
+        font-size: 1.8em;
+    }
+
+    .cnt_1 {
+        height: 450px;
+    }
+
+    .cnt_1 p {
+        width: 100%;
+        text-align: justify;
+        font-size: 1em;
+    }
+
+    .cnt_2 {
+        height: 1400px;
+    }
+
+    .srvc_r, .srvc_l, .srvc {
+        width: 100%;
+        float: none;
+    }
+
+    .srvc_r, .srvc_l {
+        height: auto;
+    }
+
+    .srvc_r p, .srvc_l p {
+        width: 88%;
+        margin-bottom: 10px;
+        font-size: 1em;
+    }
+
+    .srvc {
+        margin-top: 38px;
+    }
+
+    .cnt_6 {
+        height: 3000px;
+    }
+
+    .shld {
+        width: 100%;
+    }
+
+    .dot, .dot_2 {
+        border: none;
+        width: 100%;
+        height: 36px;
+    }
+
+    .shld .srvc_l, .shld .srvc_r {
+        height: auto;
+    }
+
+    #pregled, #protetika, #bolest, #decja, #oralna, #estetska, #paradont {
+        height: auto;
+    }
+
+    .pp_l {
+        width: 100% !important;
+    }
+
+    .dot_2 {
+        height: 60px;
+    }
+
+    .cnt_3 {
+        height: 950px;
+    }
+
+    .dr {
+        width: 100%;
+    }
+
+    .pic_1, .pic_2 {
+        width: 50%;
+        max-width: 250px;
+        margin: 50px auto 0 30%;
+    }
+
+    .cnt_4 {
+        display: none;
+    }
+
+    .cnt_5 {
+        height: 800px;
+    }
+
+    .adr, .wrk {
+        width: 100%;
+    }
+
+    .adr {
+        height: 200px;
+    }
+
+    .vl {
+        display: none;
+    }
+
+    .fb {
+        width: 100%;
+    }
+    .fb a {
+        margin: 0 auto;
+    }
+    .map {
+        height: 200px;
+        top: -50px;
+    }
+
+    .bottom_bar {
+        position: relative;
+        top: 25px;
+    }
+
+
+    /*---------MODALS------------*/
+
+    .modalDialog > div {
+        width: 30%;
+    }
+
+    .li_1 {
+        padding: 5px;
+    }
+
+
+
+
+}
+
+@media screen and (min-width: 810px) and (max-width: 1024px) {
+
+    .header {
+        max-height: 155px;
+        max-width: 810px;
+    }
+
+    .nav_2, h2, .block {
+        width: 810px;
+    }
+
+    .overlay {
+        height: 200px;
+    }
+
+    .cnt_1, .cnt_2, .cnt_3, .cnt_4, .cnt_5, .cnt_6 {
+        width: 100%;
+    }
+
+    .block {
+        width: 810px;
+        margin: 0 auto;
+    }
+
+    .cnt_1 h2, .cnt_2 h2, .cnt_3 h2, .cnt_4 h2, .cnt_5 h2, .cnt_6 h2 {
+        width: 100%;
+        font-size: 1.8em;
+    }
+
+    .cnt_1 {
+        height: 450px;
+    }
+
+    .cnt_1 p {
+        width: 100%;
+        text-align: justify;
+        font-size: 1em;
+    }
+
+    .cnt_2 {
+        height: 1200px;
+    }
+
+    .srvc_r, .srvc_l, .srvc {
+        width: 100%;
+        float: none;
+    }
+
+    .srvc_r, .srvc_l {
+        height: auto;
+    }
+
+    .srvc_r p, .srvc_l p {
+        width: 88%;
+        margin-bottom: 10px;
+        font-size: 1em;
+    }
+
+    .srvc {
+        margin-top: 38px;
+    }
+
+    .cnt_6 {
+        height: 3000px;
+    }
+
+    .shld {
+        width: 100%;
+    }
+
+    .dot, .dot_2 {
+        border: none;
+        width: 100%;
+        height: 36px;
+    }
+
+    .shld .srvc_l, .shld .srvc_r {
+        height: auto;
+    }
+
+    #pregled, #protetika, #bolest, #decja, #oralna, #estetska, #paradont {
+        height: auto;
+    }
+
+    .pp_l {
+        width: 100% !important;
+    }
+
+    .dot_2 {
+        height: 60px;
+    }
+
+    .cnt_3 {
+        height: 550px;
+    }
+
+    .dr {
+        width: 49%;
+    }
+
+    .pic_1, .pic_2 {
+        width: 222px;
+        margin: 50px auto 0 21%;
+        border-bottom: 8px solid rgba(2, 184, 191, 1);
+    }
+
+    .pic_2 {
+
+        border-bottom: 8px solid rgba(7, 188, 131, 1);
+    }
+
+    .cnt_4 {
+        display: block;
+        height: 1000px;
+    }
+
+    .cnt_5 {
+        height: 800px;
+    }
+
+    .nav_3 {
+        width: 810px;
+    }
+
+    .track {
+        width: 810px;
+    }
+
+    .prew img {
+        width: 810px;
+    }
+
+    h2 {
+        max-width: 810px
+    }
+
+    .content {
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .bottom_bar {
+        width: auto;
+    }
+
+    .wrapper {
+        wudth: auto;
+    }
+
+    .cnt_1, .cnt_2, .cnt_3, .cnt_4, .cnt_5, .cnt_6 {
+        width: 100%;
+    }
+
+    .cnt_5 {
+        height: 900px;
+    }
+
+    .fb {
+        width: 810px;
+    }
+    .fb a {
+        margin: 20px 0 0 46.27%;
+    }
+}
