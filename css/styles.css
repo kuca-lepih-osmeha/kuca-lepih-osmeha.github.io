@@ -617,19 +617,19 @@ h2 {
 /***CONTACT***/
 
 .cnt_5 {
-    height: 930px;
+    height: 1050px;
 }
 
 .cnt_5 .block {
     margin-top: 80px;
-    height: 700px;
+    height: 820px;
 }
 
 .adr, .wrk {
     position: relative;
     display: inline-block;
     width: 49%;
-    height: 120px;
+    height: 240px;
     text-align: center;
 }
 
@@ -641,7 +641,7 @@ h2 {
     top: 0;
     display: inline-block;
     width: 1px;
-    height: 120px;
+    height: 240px;
     background-color: gray;
 }
 
@@ -1032,7 +1032,7 @@ h2 {
     }
 
     .cnt_5 {
-        height: 800px;
+        height: 1020px;
     }
 
     .adr, .wrk {
@@ -1040,7 +1040,7 @@ h2 {
     }
 
     .adr {
-        height: 200px;
+        height: 320px;
     }
 
     .vl {
@@ -1327,7 +1327,7 @@ h2 {
     }
 
     .cnt_5 {
-        height: 800px;
+        height: 1020px;
     }
 
     .adr, .wrk {
@@ -1335,7 +1335,7 @@ h2 {
     }
 
     .adr {
-        height: 200px;
+        height: 320px;
     }
 
     .vl {
@@ -1491,7 +1491,7 @@ h2 {
     }
 
     .cnt_5 {
-        height: 800px;
+        height: 920px;
     }
 
     .nav_3 {
@@ -1528,7 +1528,7 @@ h2 {
     }
 
     .cnt_5 {
-        height: 900px;
+        height: 1020px;
     }
 
     .fb {
