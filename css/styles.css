@@ -384,7 +384,7 @@ h2 {
     height: 160px;
     background-color: rgba(256, 256, 256, 0.1);
     float: left;
-    margin-top: 30px;
+    margin-top: 20px;
 }
 
 .srvc_r {
@@ -394,7 +394,7 @@ h2 {
 .srvc_l h6, .srvc_r h6 {
     text-align: center;
     color: white;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
 }
 
 .srvc p {
@@ -423,7 +423,7 @@ h2 {
 }
 
 #bolest {
-    height: 434px;
+    height: 450px;
 }
 
 #estetska {
@@ -443,7 +443,7 @@ h2 {
 }
 
 #protetika {
-    height: 410px;
+    height: 450px;
 }
 
 #hijaluron {
