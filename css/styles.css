@@ -384,7 +384,7 @@ h2 {
     height: 160px;
     background-color: rgba(256, 256, 256, 0.1);
     float: left;
-    margin-top: 20px;
+    margin-top: 30px;
 }
 
 .srvc_r {
@@ -394,7 +394,7 @@ h2 {
 .srvc_l h6, .srvc_r h6 {
     text-align: center;
     color: white;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
 }
 
 .srvc p {
