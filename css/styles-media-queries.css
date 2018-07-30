@@ -931,7 +931,7 @@
             margin-top: 150px;
         }
         #section-tim {
-            margin-top: 1700px;
+            margin-top: 1950px;
         }
         .biografija p {
             width: 90%;
@@ -957,7 +957,7 @@
 @media screen and (min-width: 321px) and (max-width: 400px) {
     @supports (display: flex) {
         #section-tim {
-            margin-top: 1700px;
+            margin-top: 2155px;
         }
     }
 }
@@ -965,7 +965,7 @@
 @media screen and (max-width: 320px) {
     @supports (display: flex) {
         #section-tim {
-            margin-top: 1700px;
+            margin-top: 2350px;
         }
     }
 }
