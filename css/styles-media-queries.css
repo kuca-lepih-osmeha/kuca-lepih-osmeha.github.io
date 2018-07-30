@@ -1,0 +1,971 @@
+/*--------MEDIA QUERIES--------*/
+
+@media screen and (min-width: 3500px) {
+    @supports (display: flex) {
+        .nav_bar {
+            margin-top: 5%;
+            height: 60px;
+        }
+        .logo img {
+            margin-top: 15%;
+            max-height: 200px;
+        }
+        .head_left h6,
+        .usluge h6,
+        .adr h6,
+        .wrk h6 {
+            font-size: 3em;
+        }
+        .head_right p,
+        .nav a,
+        .lang a,
+        .side_bar a:link,
+        .cnt_1 p,
+        .usluge p,
+        .opsirno p,
+        .biografija p,
+        .adr p,
+        .wrk p {
+            font-size: 1.8em;
+        }
+        .usluge p,
+        .opsirno p {
+            line-height: 35px;
+            width: 1100px;
+        }
+        .side_bar {
+            width: 150px;
+            height: 300px;
+        }
+        .side_bar a:link {
+            width: 140px;
+            height: 30px;
+            padding-top: 7px;
+        }
+        .nav {
+            padding-left: 310px;
+        }
+        .cnt_1 {
+            margin-top: 45%;
+            height: 1000px;
+        }
+        .cnt_1 p,
+        .srvc,
+        .block {
+            width: 1200px;
+        }
+        .block_team {
+            margin-left: 5%;
+        }
+        .dr {
+            margin-left: 15%;
+        }
+        .gallery-photos {
+            margin-left: 35%;
+        }
+        .fb a {
+            margin-left: 57%;
+        }
+    }
+}
+
+@media screen and (min-width: 2500px) and (max-width: 3499px) {
+    @supports (display: flex) {
+        .nav_bar {
+            margin-top: 5%;
+            height: 60px;
+        }
+        .logo img {
+            margin-top: 15%;
+            max-height: 200px;
+        }
+        .head_left h6,
+        .usluge h6,
+        .adr h6,
+        .wrk h6 {
+            font-size: 3em;
+        }
+        .head_right p,
+        .nav a,
+        .lang a,
+        .side_bar a:link,
+        .cnt_1 p,
+        .usluge p,
+        .opsirno p,
+        .biografija p,
+        .adr p,
+        .wrk p {
+            font-size: 1.8em;
+        }
+        .usluge p,
+        .opsirno p {
+            line-height: 35px;
+            width: 1100px;
+        }
+        .side_bar {
+            width: 150px;
+            height: 300px;
+        }
+        .side_bar a:link {
+            width: 140px;
+            height: 30px;
+            padding-top: 7px;
+        }
+        .nav {
+            padding-left: 310px;
+        }
+        .cnt_1 {
+            margin-top: 38%;
+            height: 750px;
+        }
+        .cnt_1 p,
+        .srvc,
+        .block {
+            width: 1200px;
+        }
+        .block_team {
+            margin-left: 5%;
+        }
+        .dr {
+            margin-left: 15%;
+        }
+        .gallery-photos {
+            margin-left: 30%;
+        }
+        .fb a {
+            margin-left: 57%;
+        }
+    }
+}
+
+@media screen and (min-width: 1801px) and (max-width: 2499px) {
+    @supports (display: flex) {
+        .cnt_1 {
+            margin-top: 30%;
+        }
+        .gallery-photos {
+            margin-left: 25%;
+        }
+        .dr {
+            margin-left: 15%;
+        }
+
+        .nav_bar {
+            margin-top: 50px;
+        }
+
+        .logo img {
+            margin-top: 5%;
+        }
+    }
+}
+
+@media screen and (max-width: 1800px) {
+    @supports (display: flex) {
+        .cnt_1 {
+            margin-top: 15vw;
+        }
+        .cnt_1 p {
+            width: 1000px;
+        }
+        .block_team {
+            margin-left: 5%;
+        }
+    }
+}
+
+@media screen and (max-width: 1100px) {
+    @supports (display: flex) {
+        .head_left img {
+            width: 75%;
+        }
+        .head_right {
+            margin-right: 50px;
+            margin-top: 7%;
+        }
+        .wrapper {
+            height: 550px;
+        }
+        .cnt_1 p {
+            width: 800px;
+        }
+        #opsta,
+        #estetska,
+        #endodoncija,
+        #protetika,
+        #parodontologija,
+        #ortodoncija,
+        #hirurgija,
+        #fileri {
+            margin: 0px 10% 3%;
+        }
+        .dr {
+            width: 250px;
+        }
+        .pic_1,
+        .pic_2 {
+            margin: 50px 5px 0px;
+        }
+        .biografija p {
+            margin-top: -3%;
+        }
+        .dr h6 {
+            margin-left: 0px;
+        }
+        .gallery-responsive {
+            margin-left: 0px;
+            padding-left: 5%;
+        }
+        .gallery-photos {
+            width: 100%;
+        }
+        .gallery01-1 {
+            flex-direction: row;
+            width: 50%;
+        }
+        .gallery02 {
+            width: 180px;
+        }
+        .big_picture {
+            width: 350px;
+            padding: 3px;
+            flex-grow: 2;
+        }
+        .small_picture {
+            width: 165px;
+            padding: 3px;
+            flex-grow: 2;
+        }
+        .lang {
+            padding-right: 50px;
+        }
+    }
+}
+
+@media screen and (min-width: 1101px) and (max-width: 1270px) {
+    @supports (display: flex) {
+        .wrapper {
+            height: 700px;
+        }
+        .gallery-responsive {
+            margin-left: 0px;
+            padding-left: 5%;
+        }
+        .gallery-photos {
+            width: 100%;
+        }
+        .gallery01-1 {
+            flex-direction: row;
+            width: 40%;
+        }
+        .gallery02 {
+            width: 180px;
+        }
+        .big_picture {
+            width: 350px;
+            padding: 3px;
+            flex-grow: 2;
+        }
+        .small_picture {
+            width: 165px;
+            padding: 3px;
+            flex-grow: 2;
+        }
+
+    }
+}
+
+@media screen and (max-width: 850px) {
+    @supports (display: flex) {
+        div {
+            position: unset;
+        }
+        /*****HEADER****/
+        .header {
+            width: 100%;
+            height: auto;
+        }
+        #header_white {
+            flex-direction: column;
+            width: 100%;
+        }
+        .logo {
+            order: 1;
+            width: 25%;
+            height: auto;
+            padding: 5px;
+            margin: 0px 0px auto 10px;
+        }
+        .logo img {
+            max-width: 120px;
+            height: auto;
+            padding: 0px;
+        }
+        .head_left {
+            order: 1;
+            width: 75%;
+            margin: 25px 5px 5px 20px;
+        }
+        .head_left h6 {
+            width: 90%;
+        }
+        .head_left img {
+            width: 85%;
+            margin-right: 10px;
+        }
+        .head_right {
+            display: flex;
+            order: 2;
+            width: 90%;
+            height: auto;
+            flex-direction: row;
+            margin: 15px 15px 0px;
+            padding-bottom: 0px;
+            padding-right: 15px;
+            line-height: 20px;
+            justify-content: space-around;
+            align-self: flex-start;
+        }
+        .head_right p {
+            display: flex;
+            width: 100%;
+            font-size: 1em;
+            letter-spacing: 0px;
+            font-weight: lighter;
+            text-align: left;
+            justify-content: left;
+            align-self: flex-start;
+            padding: 5px 0px 0px 0px;
+            color: rgb(49, 49, 49);
+            border-top: 2px solid rgba(2, 184, 191, 1);
+        }
+        #nav_bar_container,
+        .nav_bar {
+            display: none;
+        }
+        #rpr_1,
+        #rpr_2,
+        #rpr_3 {
+            z-index: 99999;
+        }
+        .hamburger {
+            display: block;
+            position: fixed;
+            width: 35px;
+            height: 35px;
+            top: 0px;
+            border-radius: 2px;
+            margin-top: 17px;
+            margin-left: 87%;
+            float: right;
+            z-index: 999999;
+        }
+        .stripe {
+            position: relative;
+            left: 2px;
+            width: 30px;
+            height: 5px;
+            margin-top: 3px;
+            background-color: #116089;
+            border: 1px solid white;
+        }
+        /*****CONTENT****/
+        .content {
+            margin-top: 100px;
+            display: flex;
+            flex-direction: column;
+        }
+        .nav {
+            display: none;
+        }
+        #opsirno {
+            display: flex;
+            width: 100%;
+        }
+        span.more-icon,
+        span.more {
+            font-size: 12px;
+        }
+        .opis_slike_fullscreen {
+            display: none;
+        }
+        .responsive_opis_slike {
+            display: flex;
+        }
+        .rh_1,
+        .rh_2 {
+            display: inline-flex;
+            font-size: 1.2em;
+            justify-content: center;
+            align-self: center;
+            position: unset;
+        }
+        .cnt_1 {
+            order: 2;
+        }
+        #section-usluge {
+            order: 3;
+        }
+        .cnt_6 {
+            order: 4;
+        }
+        #section-tim {
+            order: 5;
+            margin-top: 1700px;
+        }
+        #section-galerija {
+            order: 6;
+        }
+        .parallax-window {
+            order: 7;
+        }
+        .cnt_5 {
+            order: 8;
+        }
+        .bottom_bar {
+            order: 9;
+        }
+        .side_bar_container {
+            display: none;
+        }
+        .cnt_1,
+        .cnt_2,
+        .cnt_3,
+        .cnt_4,
+        .cnt_5,
+        .cnt_6 {
+            width: 100%;
+            position: unset;
+        }
+        .block {
+            width: 84%;
+            margin-left: 8%;
+            height: auto;
+        }
+        .cnt_1 h2,
+        .cnt_2 h2,
+        .cnt_3 h2,
+        .cnt_4 h2,
+        .cnt_5 h2,
+        .cnt_6 h2 {
+            width: 100%;
+            font-size: 2em;
+        }
+        .cnt_1 {
+            height: auto;
+            margin-top: 0px;
+            padding: 0px 0px 50px;
+        }
+        .cnt_1 p {
+            width: 100%;
+            text-align: justify;
+            font-size: 1.2em;
+        }
+        .wrapper {
+            height: 500px;
+        }
+        .cnt_2 {
+            height: 1400px;
+            background-image: url("../images/office/9,1.jpg");
+        }
+        .srvc_r,
+        .srvc_l,
+        .srvc {
+            width: 100%;
+            float: none;
+        }
+        .srvc_r,
+        .srvc_l {
+            height: auto;
+        }
+        .srvc_r p,
+        .srvc_l p {
+            width: 88%;
+            margin-bottom: 10px;
+            font-size: 1em;
+        }
+        .srvc {
+            margin-top: 38px;
+        }
+        .usluge h6,
+        p.podnaslov {
+            padding: 0px 3vw;
+            text-align: center;
+        }
+        .usluge h6 {
+            font: normal normal normal 24px/1.3em 'Dosis', sans-serif;
+        }
+        .opsirno p {
+            width: 93%;
+        }
+        .usluge_slike {
+            display: flex;
+            flex-direction: column;
+        }
+        .usluge_slike img {
+            width: 95%;
+            height: auto;
+            padding-top: 10px;
+        }
+        span.more {
+            margin-right: 10px;
+        }
+        #section_cenovnik,
+        #section-tim,
+        #section-galerija {
+            height: auto;
+            z-index: 9999;
+        }
+        .shld {
+            width: 100%;
+        }
+        .dot,
+        .dot_2 {
+            display: flex;
+            border: none;
+            width: 100%;
+            height: auto;
+            align-items: flex-end;
+            margin-top: 10px;
+        }
+        p.pp_l {
+            display: inline-flex;
+            width: 70%;
+        }
+        p.pp_r {
+            display: inline-flex;
+            width: 30%;
+        }
+        .shld .srvc_l {
+            height: auto;
+        }
+        .shld .srvc_l,
+        .shld .srvc_r {
+            height: auto;
+        }
+        #pregled,
+        #protetika,
+        #bolest,
+        #decja,
+        #oralna,
+        #estetska,
+        #paradont {
+            height: auto;
+        }
+        .pp_l {
+            width: 100% !important;
+        }
+        .dot_2 {
+            height: 60px;
+        }
+        .cnt_3 {
+            background-image: url("../images/office/team_bg.jpg");
+            display: block;
+            height: auto;
+        }
+        .block_team {
+            margin-left: 0px;
+        }
+        .biografija p {
+            margin-top: -3.5em;
+        }
+        .dr {
+            width: 25%;
+        }
+        .dr h6 {
+            margin-left: 0px;
+            text-align: left;
+        }
+        #section-galerija {
+            align-items: center;
+            margin-top: 5vw;
+            margin-bottom: 5vw;
+            flex-direction: column;
+        }
+        .gallery-responsive {
+            display: inline-flex;
+            flex-direction: row;
+            order: 2;
+            padding: 0px 5vw;
+            align-items: center;
+            margin-left: 0%;
+        }
+        .gallery {
+            height: auto;
+        }
+        .gallery h2 {
+            order: 1;
+            align-self: flex-start;
+        }
+        .gallery-photos {
+            margin-top: 20px;
+            margin-left: 0px;
+        }
+        .gallery-photos,
+        .gallery01-1 {
+            flex-direction: column;
+        }
+        .big_picture,
+        .small_picture {
+            width: 250px;
+        }
+        .gallery-photos {
+            width: 90%;
+            align-items: center;
+        }
+        .gallery01,
+        .gallery01-1,
+        .gallery02,
+        .gallery02-1 {
+            width: 250px;
+            align-items: center;
+        }
+        .gallery h2 {
+            font-size: 2em;
+        }
+        .pic_1,
+        .pic_2 {
+            width: 90%;
+            margin: 0px;
+        }
+        .cnt_4 {
+            display: none;
+        }
+        .fb {
+            width: 100%;
+        }
+        .fb a {
+            margin: 0px 0 20px 45.27%;
+        }
+    }
+}
+
+@media screen and (max-width: 650px) {
+    @supports (display: flex) {
+        .logo {
+            order: 1;
+            width: 25%;
+            height: auto;
+            padding: 5px;
+            margin: 10px 13px auto 0px;
+        }
+        .logo img {
+            max-width: 100px;
+            height: auto;
+            padding: 0px;
+        }
+        .head_left {
+            order: 1;
+            width: 75%;
+            margin: 45px 5px 5px 20px;
+        }
+        .head_left h6 {
+            width: 200px;
+            font-size: 1.2em;
+        }
+        .head_left img {
+            width: 95%;
+            margin-right: 10px;
+        }
+        /*.head_right {
+            margin: 27% 15px;
+        }*/
+        .nav_2 {
+            top: 0px;
+        }
+        #rpr_1,
+        #rpr_3 {
+            left: 0px;
+        }
+        .rpr {
+            display: flex;
+            width: 100%;
+            margin-left: 0px;
+            height: 60px;
+            justify-content: center;
+        }
+        .rpr a {
+            top: 0;
+            justify-content: center;
+            align-self: center;
+            z-index: 9999999;
+        }
+        .rpr h5 {
+            justify-content: center;
+            position: unset;
+            align-self: center;
+        }
+        .rh_1,
+        .rh_2 {
+            display: inline-flex;
+            font-size: 1.2em;
+            justify-content: center;
+            align-self: center;
+            position: unset;
+        }
+        #section-tim {
+            margin-top: 1700px;
+        }
+        #rpr_1,
+        #gll_1 {
+            background-color: rgba(2, 184, 191, 0.8);
+            border-bottom: 7px solid rgba(2, 184, 191, 1);
+        }
+        #rpr_2,
+        #gll_2 {
+            background-color: rgba(25, 144, 206, 0.8);
+            border-bottom: 7px solid rgba(25, 144, 206, 1);
+        }
+        #rpr_3,
+        #gll_3 {
+            background-color: rgba(7, 188, 131, 0.8);
+            border-bottom: 7px solid rgba(7, 188, 131, 1);
+        }
+        .wrapper {
+            background-size: 160%;
+            height: 240px;
+        }
+        .overlay {
+            height: 250px;
+            margin: 0px 0px 5px;
+            width: 100%;
+            position: unset;
+        }
+        .cnt_1 {
+            height: auto;
+            margin-top: 230px;
+            padding: 15% 0px;
+        }
+        .cnt_1 p {
+            width: 100%;
+            text-align: justify;
+            font-size: 1.2em;
+        }
+        .srvc_r,
+        .srvc_l {
+            height: auto;
+        }
+        .srvc_r p,
+        .srvc_l p {
+            width: 88%;
+            margin-bottom: 10px;
+            font-size: 1em;
+        }
+        .srvc {
+            margin-top: 38px;
+        }
+        .usluge h6,
+        p.podnaslov {
+            padding: 0px 3vw;
+            text-align: center;
+        }
+        .usluge h6 {
+            font: normal normal normal 24px/1.3em 'Dosis', sans-serif;
+        }
+        .opsirno p {
+            width: 93%;
+        }
+        .usluge_slike {
+            display: flex;
+            flex-direction: column;
+        }
+        .usluge_slike img {
+            width: 95%;
+            height: auto;
+            padding-top: 10px;
+        }
+        span.more {
+            margin-right: 10px;
+        }
+        #section_cenovnik,
+        #section-tim,
+        #section-galerija {
+            height: auto;
+            z-index: 99999;
+        }
+        .shld {
+            width: 100%;
+        }
+        .dot,
+        .dot_2 {
+            display: flex;
+            border: none;
+            width: 100%;
+            height: auto;
+            align-items: flex-end;
+            margin-top: 10px;
+        }
+        p.pp_l {
+            display: inline-flex;
+            width: 70%;
+        }
+        p.pp_r {
+            display: inline-flex;
+            width: 30%;
+        }
+        .shld .srvc_l {
+            height: auto;
+        }
+        .shld .srvc_l,
+        .shld .srvc_r {
+            height: auto;
+        }
+        #pregled,
+        #protetika,
+        #bolest,
+        #decja,
+        #oralna,
+        #estetska,
+        #paradont {
+            height: auto;
+        }
+        .pp_l {
+            width: 100% !important;
+        }
+        .dot_2 {
+            height: 60px;
+        }
+        .cnt_3 {
+            background-image: url("../images/office/team_bg.jpg");
+            display: block;
+            height: auto;
+        }
+        .block_team {
+            flex-direction: column;
+            padding: 15px;
+            align-items: center;
+        }
+        .biografija {
+            width: 100%;
+            margin-top: 20px;
+            padding-right: 0px;
+            align-items: center;
+        }
+        .biografija p {
+            width: 90%;
+            margin: 7vw 2% 0px;
+        }
+        .dr {
+            width: 100%;
+            align-items: center;
+            margin-left: 0px;
+            margin-right: 0px;
+            padding-bottom: 20px;
+        }
+        .dr h6 {
+            margin-left: 0px;
+            text-align: center;
+        }
+        .gallery-responsive {
+            order: 2;
+            margin-left: 0%;
+            flex-direction: column;
+        }
+        .big_picture,
+        .small_picture {
+            width: 300px;
+        }
+        .gallery-photos {
+            width: 90%;
+            align-items: center;
+            margin-left: -10%;
+        }
+        .gallery01,
+        .gallery01-1,
+        .gallery02,
+        .gallery02-1 {
+            width: 270px;
+            align-items: center;
+        }
+        .gallery h2 {
+            font-size: 2em;
+        }
+        .pic_1,
+        .pic_2 {
+            width: 50%;
+            margin: 10px;
+        }
+        .cnt_4 {
+            display: none;
+        }
+        .cnt_5 {
+            height: 1020px;
+        }
+        .adr,
+        .wrk {
+            width: 100%;
+        }
+        .adr {
+            height: 280px;
+        }
+        .vl {
+            display: none;
+        }
+        .fb {
+            width: 100%;
+        }
+        .fb a {
+            margin: 0px 0 20px 43.27%;
+        }
+        .map {
+            height: 200px;
+            top: -40px;
+        }
+        .bottom_bar {
+            display: block;
+            position: relative;
+            height: 20px;
+        }
+    }
+}
+
+@media screen and (max-width: 450px) {
+    @supports (display: flex) {
+        /*.head_right {
+            margin: 40% 15px;
+        }*/
+        .head_right p {
+            font-size: 0.8em;
+        }
+        .cnt_1 {
+            margin-top: 150px;
+        }
+        #section-tim {
+            margin-top: 1700px;
+        }
+        .biografija p {
+            width: 90%;
+            font-size: 1em;
+            /*margin-right: 10%;*/
+            margin-top: 0px;
+        }
+        .dr {
+            height: 250px;
+        }
+        .gallery-responsive {
+            order: 2;
+            margin-left: 0%;
+            flex-direction: column;
+        }
+        .big_picture,
+        .small_picture {
+            width: 250px;
+        }
+    }
+}
+
+@media screen and (min-width: 321px) and (max-width: 400px) {
+    @supports (display: flex) {
+        #section-tim {
+            margin-top: 1700px;
+        }
+    }
+}
+
+@media screen and (max-width: 320px) {
+    @supports (display: flex) {
+        #section-tim {
+            margin-top: 1700px;
+        }
+    }
+}

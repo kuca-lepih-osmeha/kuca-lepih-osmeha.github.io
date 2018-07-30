@@ -1,221 +1,251 @@
-@font-face {font-family:"Open Sans";src:url("OpenSans-Regular.eot?") format("eot"),url("OpenSans-Regular.woff") format("woff"),url("OpenSans-Regular.ttf")
-format("truetype"),url("OpenSans-Regular.svg#OpenSans") format("svg");font-weight:normal;font-style:normal;}
-
-@font-face {font-family:"DejaVu Sans Condensed";src:url("DejaVuSansCondensed.eot?") format("eot"),url("DejaVuSansCondensed.woff") format("woff"),url("DejaVuSansCondensed.ttf")
-format("truetype"),url("DejaVuSansCondensed.svg#DejaVuSansCondensed") format("svg");font-weight:normal;font-style:normal;}
-
-
-html, body, div, ul, ol, li, h1, h2, h3, h4, h5, h6, img, a, p, canvas {
-    margin: 0;
-    padding: 0;
-    border: 0;
+html,
+body,
+div,
+ul,
+ol,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+img,
+a,
+p,
+canvas {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  text-decoration: none;
 }
 
-html, body {
-    max-width: 100%;
-    overflow-x: hidden;
+html,
+body {
+  max-width: 100%;
+  font-family: "Dosis", sans-serif;
 }
 
-a {
-    text-decoration: none;
-    color: gray;
-    font: normal normal normal 0.96em 'Open Sans',sans-serif;
+.nav a,
+.lang a {
+  color: white;
 }
 
 /***HEADER + NAVIGATION***/
 
-.line_1, .line_2 {
-    display: inline-block;
-    position: relative;
-    width: 100%;
-    height: 15px;
+.line_1,
+.line_2 {
+  display: inline-block;
+  position: relative;
+  width: 100%;
+  height: 15px;
 }
 
-.el_1, .el_3, .el_2 {
-    display: inline-block;
-    position: absolute;
-    top: 0px;
-    width: 40%;
-    height: 10px;
-    background-color: rgba(2, 184, 191, 1);
+.el_1,
+.el_3,
+.el_2 {
+  display: inline-block;
+  position: absolute;
+  top: 0px;
+  width: 40%;
+  height: 10px;
+  background-color: rgba(2, 184, 191, 1);
 }
 
 .el_2 {
-    background-color: rgba(25, 144, 206, 1);
-    left: 30%
+  background-color: rgba(25, 144, 206, 1);
+  left: 30%;
 }
 
 .el_3 {
-    background-color: rgba(7, 188, 131, 1);
-    width: 30%;
-    left: 70%;
+  background-color: rgba(7, 188, 131, 1);
+  width: 30%;
+  left: 70%;
 }
 
-.header {
-    max-height: 140px;
-    max-width: 980px;
-    margin: 0 auto;
+#header_white {
+  display: flex;
+  max-height: 140px;
+  max-width: 100%;
+  margin: 0 auto;
+  flex-direction: row;
+  align-content: flex-start;
 }
 
-.logo, .logo img {
-    display: inline-block;
-}
-
-.logo {
-    display: inline-block;
-    position: relative;
-    top: -5px;
-    width: 14%
+.logo_area {
+  width: 85%;
+  display: inline-flex;
+  flex-direction: row;
+  height: 400px;
 }
 
 .logo img {
-    float: right;
-    margin-right: 12%;
-}
-
-.headline {
-    display: inline-block;
-    position: relative;
-    width: 85%;
-    height: 84px;
-    margin: 0 auto;
-}
-
-.head_left, .head_right {
-    display: inline-block;
-    position: relative;
-    min-width: 350px;
-    height: inherit;
+  order: 1;
+  width: auto;
+  max-height: 140px;
+  align-self: flex-start;
+  padding-left: 100px;
+  padding-right: 15px;
 }
 
 .head_left {
-    top: -50px;
+  order: 1;
+  width: 100%;
+  align-self: flex-start;
+  margin-top: 40px;
+}
+
+.head_left img {
+  width: 55%;
+  height: auto;
 }
 
 .head_right {
-    height: 50px;
-    min-width: 150px;
-    max-width: 250px;
-    top: -20px;
-    float: right;
+  order: 2;
+  width: 40%;
+  /*align-self: flex-end;*/
+  margin-right: 150px;
+  margin-top: 5%;
+  padding-bottom: 20px;
 }
 
 h6 {
-    position: relative;
-    color: #116089;
-    font: normal normal normal 24px/1.4em 'Open Sans',sans-serif;
-    top: 20px;
+  color: rgba(25, 144, 206, 1);
+  font: normal normal normal 28px/1.6em "Dosis", sans-serif;
+  top: 20px;
 }
 
 .hamburger {
-    display: none;
+  display: none;
 }
 
-.headline h1 {
-    position: relative;
-    display: inline-block;
-    top: 30px;
-    color: #116089;
-    font: normal normal normal 2.6em 'Open Sans', sans-serif;
+.head_right p {
+  color: rgba(25, 144, 206, 1);
+  align-self: flex-end;
+  width: 100%;
+  text-align: right;
+  font: normal normal bold 1.2em "Dosis", sans-serif;
+  letter-spacing: 1px;
 }
 
-.headline p {
-    position: relative;
-    display:block;
-    color: #116089;
-    top: 0;
-    width: 100%;
-    text-align: right;
-    font: normal normal normal 1em 'Open Sans',sans-serif;
-    margin-right: 5%;
+#nav_bar_container {
+  display: block;
+  width: 100%;
+  height: 35px;
+  z-index: 9999;
+  position: relative;
 }
 
-.nav_bar{
-    display:block;
-    background-color: rgb(242, 242, 242);
-    width: 100%;
+.nav_bar {
+  display: flex;
+  background-color: rgba(95, 95, 95, 0.65);
+  height: 35px;
+  width: 100%;
+  margin-top: 15px;
+  justify-content: space-between;
 }
 
 .nav {
-    display: block;
-    width: 720px;
-    margin: 0 auto;
+  display: inline-flex;
+  margin: 0px;
+  padding-left: 245px;
 }
 
-.li, .li_1 {
-    display: inline-block;
-    padding: 10px;
+.lang {
+  display: inline-flex;
+  margin: 0px;
+  padding-right: 150px;
 }
+
+.li,
+.li_1 {
+  display: inline-block;
+  padding: 10px 10px 5px;
+}
+
+.active {
+  background-color: rgb(25, 134, 192);
+  /*margin-right: -5px;
+  margin-left: -5px;*/
+}
+
 
 .li a:hover {
-    color: #02B8BF;
-    height: 18px;
+  color: rgb(250, 250, 250);
+  height: 18px;
 }
 
 /***SIDEBAR***/
 
 .side_bar_container {
-    display: block;
-    position: fixed;
-    height: 20px;
-    width: 10%;
-    top: 0;
-    margin: 20% 12% auto 0;
-    left: 85%;
-    z-index: 9999;
+  display: block;
+  position: fixed;
+  height: 190px;
+  width: 12vw;
+  top: 0;
+  margin: 20% 0px auto 0;
+  left: 85%;
+  z-index: 9999;
 }
 
 .side_bar {
-    display: block;
-    float: right;
-    height: 330px;
-    width: 170px;
-    margin: 20% 5% auto 0;
+  display: block;
+  float: right;
+  height: 220px;
+  width: 100px;
+  padding: 0.5vw;
+  margin: 20% 0px auto 0;
+  background-color: rgb(250, 250, 250, 0.5);
+  /*filter:alpha(opacity=50); /* IE */
+  /*z-index moz-opacity:0.5; /* Mozilla */
+  /*opacity: 0.5; /* CSS3 */
 }
 
-.bullet {
-    display: inline-block;
-    float: right;
-    width: 7px;
-    height: 7px;
-    border-radius: 7px;
-    border: 2px solid #083045;
-    margin: 4px 5px 0 5px;
+.side_bar a:link {
+  text-decoration: none;
+  display: inline-block;
+  color: #083045;
+  width: 90px;
+  height: 25px;
+  padding: 3px 13px 3px 3px;
+  font-size: 16px;
+  text-align: right;
+  border-bottom: 1px solid rgb(250, 250, 250, 0.5);
 }
 
-.bullet:hover, .bullet:active {
-    background-color: #083045;
+.side_bar a:visited {
+  display: block;
+  color: #083045;
+  width: 90px;
+  height: 25px;
+  background-color: rgb(250, 250, 250);
+  border-bottom: 1px solid rgb(250, 250, 250, 0.5);
+  padding-right: 10px;
 }
 
-.side_bar a {
-    display: inline-block;
-    color: #083045;
+.side_bar a:hover {
+  display: block;
+  color: #083045;
+  background-color: rgb(250, 250, 250);
+  width: 90px;
+  height: 25px;
+  border-bottom: 1px solid #083045;
+  padding-right: 10px;
 }
 
-.current > span {
-    left: -10px !important;
+.side_bar a:active {
+  display: block;
+  color: #083045;
+  width: 90px;
+  height: 25px;
+  background-color: rgb(250, 250, 250);
+  border-bottom: 1px solid #083045;
+  padding-right: 10px;
 }
 
-.current > div {
-    background-color: #083045 !important;
-}
+/*animations*/
 
-.sb {
-    display: block;
-    margin-top: 15px;
-    text-align: right;
-    overflow: hidden;
-    transition: left 0.4s;
-}
-
-.sb a {
-    height: 22px;
-    font-size: 16px;
-}
-
-    /*animations*/
-
-.left, .right {
+/*.left, .right {
     position: relative;
     height: 23px;
     transition: left 0.4s;
@@ -235,1306 +265,739 @@ h6 {
 
 .sb:hover .right{
     left: 180px;
-}
-
+}*/
 
 /***IMG + OVERLAY***/
 
-
 .wrapper {
-    width: 100%;
-    height: 842px;
-    background-color: rgba(111, 111, 111, 0.5);
-    background-image: url("../images/ord1.jpg");
-    background-position: center;
+  width: 100%;
+  height: 842px;
+  /*background-color: rgba(111, 111, 111, 0.5);
+    background-image: url("../images/ord1.jpg");*/
+  background-position: center;
+  margin-top: -35px;
+  /*z-index: -1000;*/
 }
 
 .nav_2 {
-    position: relative;
-    top: 562px;
-    max-width: 980px;
-    height: 280px;
-    margin: 0 auto;
+  position: relative;
+  top: -280px;
+  max-width: 980px;
+  height: 280px;
+  margin: 0 auto;
 }
 
-.rpr, .gll {
-    display: inline-block;
-    position: relative;
-    width: 33%;
-    height: 270px;
+.rpr,
+.gll {
+  display: inline-block;
+  position: relative;
+  width: 33%;
+  height: 270px;
 }
 
 .rpr a {
-    position: relative;
-    top: 100px;
+  position: relative;
+  top: 100px;
 }
 
-#rpr_1, #gll_1 {
-    background-color: rgba(2, 184, 191, 0.5);
-    border-bottom: 10px solid rgba(2, 184, 191, 1);
-    left: 0.5%;
+#rpr_1,
+#gll_1 {
+  background-color: rgba(2, 184, 191, 0.5);
+  border-bottom: 10px solid rgba(2, 184, 191, 1);
+  left: 0.5%;
 }
 
-#rpr_2, #gll_2 {
-    background-color: rgba(25, 144, 206, 0.5);
-    border-bottom: 10px solid rgba(25, 144, 206, 1);
+#rpr_2,
+#gll_2 {
+  background-color: rgba(25, 144, 206, 0.5);
+  border-bottom: 10px solid rgba(25, 144, 206, 1);
 }
 
-#rpr_3, #gll_3 {
-    background-color: rgba(7, 188, 131, 0.5);
-    border-bottom: 10px solid rgba(7, 188, 131, 1);
-    left: -0.5%;
+#rpr_3,
+#gll_3 {
+  background-color: rgba(7, 188, 131, 0.5);
+  border-bottom: 10px solid rgba(7, 188, 131, 1);
+  left: -0.5%;
 }
-
 
 h5 {
-    text-align: center;
-    color: white;
+  text-align: center;
+  color: white;
 }
 
 .rh_1 {
-    font: normal normal normal 1.8em 'Open Sans',sans-serif;
-    width: 99%;
+  font: normal normal normal 1.8em "Dosis", sans-serif;
+  width: 99%;
 }
 
 .rh_2 {
-    font: normal normal bold 1.8em 'Open Sans',sans-serif;
-    width: 99%;
+  font: normal normal bold 1.8em "Dosis", sans-serif;
+  width: 99%;
 }
 
 .rh_3 {
-    display: none;
-    font: normal normal bold 1.8em 'Open Sans',sans-serif;
-    width: 99%;
-
+  display: none;
+  font: normal normal bold 1.8em "Dosis", sans-serif;
+  width: 99%;
 }
 
 /***CONTENT***/
 
 .content {
-    width: 100%;
+  width: 100%;
 }
 
-.cnt_1, .cnt_2, .cnt_3, .cnt_4, .cnt_5, .cnt_6 {
-    width: 100%;
-    height: 700px;
+.cnt_1,
+.cnt_2,
+.cnt_3,
+.cnt_4,
+.cnt_5,
+.cnt_6 {
+  width: 100%;
+  height: auto;
 }
+
+#section-usluge {
+  background-image: url("../images/office/9,1.jpg");
+  display: block;
+  height: auto;
+}
+
+#section-tim {
+  background-image: url("../images/office/team_bg.jpg");
+  display: block;
+  height: auto;
+}
+
+/*#smile_photo {
+    background-image: url("../images/textBackgrounds/background3.jpg");
+    /*z-index: -1000;*/
+
+/*display: flex;
+    width: 100%;
+    min-height: auto;
+    height: 350px;
+    background-repeat: no-repeat;
+    
+}*/
 
 .parallax-window {
-    min-height: 580px;
-    background: transparent;
+  display: flex;
+  min-height: 500px;
+  background: transparent;
+  height: auto;
+  padding-bottom: 30px;
+  /*background-image: url("../images/textBackgrounds/background1.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;*/
 }
 
+/*#section-usluge div {
+    /*display: flex;*/
+
+/*height: fit-content;
+}*/
+
 .block {
-    width: 980px;
-    height: inherit;
-    margin: 0 auto;
+  width: 980px;
+  height: inherit;
+  margin: 0 auto;
+}
+
+.pricelist {
+  text-align: center;
+  font-size: 1.3em;
 }
 
 .span {
-    height: 1px;
-    width: 100%;
-    background-color: inherit;
+  height: 1px;
+  width: 100%;
+  background-color: inherit;
 }
 
 h2 {
-    display: block;
-    width: 980px;
-    font: normal normal bold 70px/1.4em 'Open Sans',sans-serif;
-    color: #02B8BF;
-    text-align: center;
-    margin: 50px auto 0 auto;
+  display: block;
+  width: 100% !important;
+  font: normal normal bold 70px/1.4em "Dosis", sans-serif;
+  color: rgba(25, 144, 206);
+  text-align: center;
+  margin: 50px auto 0 auto;
 }
 
 .cnt_1 {
-    height: 620px;
+  height: 620px;
 }
 
 .cnt_1 p {
-    width: 800px;
-    margin: 30px auto 0 auto;
-    font: normal normal normal 1.2em 'open sans',sans-serif;
-    color: #02B8BF;
-    text-align: justify;
+  width: 800px;
+  margin: 30px auto 0 auto;
+  font: normal normal normal 1.3em "Dosis", sans-serif;
+  color: rgba(25, 144, 206);
+  text-align: justify;
 }
 
 .cnt_2 {
-    height: 1150px;
+  height: auto;
 }
 
-.cnt_3 {
-    height: 1150px;
-    background-color: rgba(17, 96, 137, 0.9);
+.cnt_2 h2,
+.cnt_3 h2 {
+  color: white;
 }
 
-.cnt_2 h2, .cnt_3 h2 {
-    color: white;
+.usluge {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  /*align-items: center;*/
+  padding: 2vw;
+  margin: 0px;
+  align-self: center;
 }
 
-.srvc, .shld {
-    display: block;
-    width: inherit;
-    height: 900px;
-    margin-top: 150px;
+#opsta,
+#estetska,
+#endodoncija,
+#protetika,
+#parodontologija,
+#ortodoncija,
+#hirurgija,
+#fileri {
+  width: 100%;
+  height: auto;
+  background-color: rgba(250, 250, 250, 0.1);
+  padding-bottom: 2vw;
+  margin-bottom: 3vw;
 }
 
-.srvc_l, .srvc_r {
-    display: inline-block;
-    width: 480px;
-    height: 160px;
-    background-color: rgba(256, 256, 256, 0.1);
-    float: left;
-    margin-top: 20px;
+.usluge h6 {
+  color: white;
+  size: 1.3vw;
+  letter-spacing: 0.5px;
+  text-align: center;
+}
+
+.usluge p,
+.opsirno p {
+  color: white;
+  height: auto;
+  size: 1.25vw;
+  letter-spacing: 0.3px;
+  font-weight: lighter;
+  text-align: justify;
+  position: unset;
+  padding: 0px 3vw;
+  line-height: 22px;
+}
+
+p.podnaslov {
+  color: rgb(207, 207, 207);
+  margin-bottom: 20px;
+  letter-spacing: 0.3px;
+  text-align: center;
+}
+
+.more-icon {
+  color: rgb(128, 208, 252);
+  font-size: 1vw;
+  border: none;
+  cursor: pointer;
+  font-style: italic;
+  background-color: rgba(25, 144, 206, 0) !important;
+  margin: 0px;
+}
+
+button {
+  outline: none;
+  -moz-outline-style: none;
+  outline-style: none;
+  outline: 0;
+  font-family: "Dosis" sans-serif;
+  size: 1.1vw;
+  align-self: flex-end;
+  background-color: rgba(25, 144, 206, 0) !important;
+  overflow: visible;
+  text-transform: none;
+}
+
+#protetika_opsirno > p > a {
+  color: rgb(128, 208, 252) !important;
+}
+
+button :hover,
+#protetika_opsirno > p > a:hover {
+  color: white !important;
+}
+
+.usluge_slike {
+  display: inline-flex;
+  align-self: center;
+  padding-top: 2vw;
+  margin-left: 3vw;
+}
+
+.usluge_slike img {
+  padding-right: 15px;
+  width: auto;
+  height: 120px;
+}
+
+.height img {
+  height: 180px;
+}
+
+.hirurgija img {
+  height: 150px;
+}
+
+.fileri img {
+  height: 180px;
+}
+
+.opis_slike,
+.opis_slike_fullscreen {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-right: 3vw;
+}
+
+.responsive_opis_slike {
+  display: none;
+}
+
+.right_padding {
+  margin-right: 3vw;
+}
+
+.srvc {
+  display: flex;
+  width: inherit;
+  height: auto;
+  margin-top: 50px;
+  flex-direction: column;
+  align-self: center;
+  z-index: 999999;
+}
+
+#section-usluge {
+  height: auto;
+}
+
+#section-cenovnik {
+  background-color: white;
+  height: auto;
+}
+
+.srvc_l,
+.srvc_r {
+  display: inline-block;
+  width: 480px;
+  height: 160px;
+  background-color: rgba(256, 256, 256, 0.1);
+  float: left;
+  margin-top: 20px;
 }
 
 .srvc_r {
-    float: right;
+  float: right;
 }
 
-.srvc_l h6, .srvc_r h6 {
-    text-align: center;
-    color: white;
-    margin-bottom: 30px;
+.srvc_l h6,
+.srvc_r h6 {
+  text-align: center;
+  color: white;
+  margin: 25px 0px 5px;
 }
 
-.srvc p {
-    width: 420px;
-    text-align: center;
-    color: white;
-    margin: 30px auto 0 auto;
-    font: normal normal normal 1.2em 'open sans',sans-serif;
-}
-
-.cnt_6 h6, .cnt_6 p {
-    color: gray;
+.cnt_6 h6,
+.cnt_6 p {
+  color: rgb(49, 49, 49);
+  letter-spacing: 0.5px;
 }
 
 .cnt_6 {
-    height: 1100px;
+  height: 980px;
 }
 
-.shld{
-    height: 1000px;
-    margin: 0 auto;
+.shld {
+  display: block;
+  width: inherit;
+  height: 980px;
+  margin: 0 auto;
+  padding-bottom: 2vw;
 }
 
 #pregled {
-    height: 60px;
+  height: 60px;
 }
 
 #bolest {
-    height: 450px;
+  height: 470px;
 }
 
-#estetska {
-    height: 216px;
+#estetska1 {
+  height: 180px;
 }
 
 #paradont {
-    height: 170px;
+  height: 170px;
 }
 
 #decja {
-    height: 172px;
+  height: 160px;
 }
 
 #oralna {
-    height: 124px;
+  height: 114px;
 }
 
-#protetika {
-    height: 450px;
+#protetika1 {
+  height: 480px;
 }
 
 #hijaluron {
-    height: 140px;
+  height: 130px;
 }
 
-.dot, .dot_2 {
-    height: 18px;
-    border-bottom: 1px dotted gray;
-    margin: 2px auto 0 auto;
-    width: 450px;
+.dot,
+.dot_2 {
+  height: 18px;
+  border-bottom: 1px dotted gray;
+  margin: 2px auto 0 auto;
+  width: 450px;
 }
 
 .dot_2 {
-    height: 36px;
+  height: 36px;
 }
 
-.shld .pp_l, .shld .pp_l2, .shld .pp_r, .shld .pp_r2 {
-    display: inline-block;
-    width: 346px;
-    float: left;
-    text-align: left;
-    margin: 0;
+.shld .pp_l,
+.shld .pp_l2,
+.shld .pp_r,
+.shld .pp_r2 {
+  display: block;
+  width: 346px;
+  float: left;
+  text-align: left;
+  margin: 0;
 }
 
 .shld .pp_l2 {
-    width: 300px;
+  width: 300px;
 }
 
-.shld .pp_r, .shld .pp_r2 {
-    width: 90px;
-    float: right;
-    text-align: right;
+.shld .pp_r,
+.shld .pp_r2 {
+  width: 90px;
+  float: right;
+  text-align: right;
 }
 
 .shld .pp_r2 {
-    width: 120px;
+  width: 120px;
 }
 
 /***TEAM***/
 
 .cnt_3 {
-    height: 600px;
+  height: 600px;
 }
 
-.dr {
-    display: inline-block;
-    width: 479px;
-    height: 300px;
-    margin-top: 50px;
+#section-tim {
+  display: flex;
+  flex-direction: column;
 }
 
-.dr h6 {
-    color: white;
-    text-align: center;
+.block_team {
+  display: flex;
+  flex-direction: row;
+}
+
+#section-tim > div:nth-child(1) {
+  display: flex;
 }
 
 .cnt_3 h2 {
-    position: relative;
-    top: 50px;
+  display: flex;
+  position: unset;
+  top: 50px;
+  letter-spacing: 1px;
+  justify-content: center;
+  height: auto;
+  width: 100%;
 }
 
-.pic_1, .pic_2 {
-    width: 222px;
-    margin: 50px auto 0 129px;
-    border-bottom: 8px solid rgba(2, 184, 191, 1);
+.dr {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 350px;
+  height: 300px;
+  margin-top: 30px;
+  align-self: flex-start;
+  margin-left: 100px;
+}
+
+.dr h6 {
+  color: white;
+  text-align: center;
+  width: 220px;
+  margin-left: 100px;
+}
+
+.pic_1,
+.pic_2 {
+  width: 222px;
+  height: auto;
+  margin: 50px auto 0 100px;
+  border-bottom: 8px solid rgba(2, 184, 191, 1);
 }
 
 .pic_2 {
-
-    border-bottom: 8px solid rgba(7, 188, 131, 1);
+  border-bottom: 8px solid rgba(7, 188, 131, 1);
 }
 
+.biografija {
+  display: inline-flex;
+  width: 60%;
+  margin-top: 100px;
+  padding-right: 20px;
+}
+
+.biografija p {
+  display: flex;
+  flex-grow: 2;
+  width: 75%;
+  color: white;
+  letter-spacing: 1px;
+  text-align: justify;
+  margin-right: 15%;
+  margin-top: -1em;
+  padding-bottom: 2em;
+  font-size: 1.2em;
+}
 
 /***GALLERY***/
 
-.cnt_4 {
-    height: 1200px;
+.gallery {
+  display: flex;
+  padding: 7vw 8vw;
+  flex-direction: column;
+  height: 850px;
+  align-items: center;
 }
 
-.nav_3 {
-    display: block;
-    position: relative;
-    width: 980px;
-    height: 40px;
-    margin: 50px auto 0 auto;
+.gallery-responsive {
+  width: 100%;
+  order: 2;
 }
 
-.cnt_4 .rh_2 {
-    margin-top: 12px;
+.gallery h2 {
+  margin-top: 0px;
+  padding-bottom: 3vw;
+  order: 1;
 }
 
-.cnt_4 .rh_2:hover {
-    color: rgba(256, 256, 256, 0.7);
-
+.gallery-photos {
+  order: 2;
+  margin: 0px;
+  display: flex;
+  flex-direction: row;
+  align-self: center;
+  width: 80%;
+  margin-left: 13%;
 }
 
-.before h5 {
-    display: none;
+.big_picture {
+  width: 420px;
+  height: auto;
 }
 
-.gll{
-    height: 60px;
-    width: 49.5%;
+.small_picture {
+  width: 200px;
+  height: auto;
 }
 
-#gll_1 {
-    left: 5px;
-    background-color: rgba(2, 184, 191, 0.7);
+.gallery-photos img {
+  padding: 5px;
 }
 
-#gll_3 {
-    left: 1px;
-    background-color: rgba(7, 188, 131, 0.7);
+.gallery01-1 {
+  width: 500px;
+  flex-flow: wrap;
 }
 
-.track {
-    display: block;
-    width: 970px;
-    height: 100px;
-    margin: 90px auto 0 auto;
-
-}
-
-.img_sm {
-    margin: 0 10px 0 10px;
-    position: relative;
-    left: -24px;
-}
-
-.img_sm img {
-    display: inline-block;
-    position: relative;
-    top: 18px;
-    border-bottom: 3px solid rgba(25, 144, 206, 0);
-    border-top: 3px solid rgba(25, 144, 206, 0);
-}
-
-.img_sm:hover img {
-    border: 3px solid rgba(25, 144, 206, 1);
-    top: 18px;
-}
-
-.img_sm:active img {
-    border: 3px solid rgba(25, 144, 206, 0.5);
-    top: 18px;
-}
-
-.prew {
-    display: block;
-    width: 970px;
-    margin: 50px auto 10px auto;
-}
-
-.prew img {
-    width: 980px;
-
-}
-
-.before {
-    display: inline-block;
-    width: 49.5%;
-    height: 30px;
-}
-
-.before h5 {
-    color: rgba(25, 144, 206, 1);
-    text-align: center;
+.gallery02 {
+  width: 210px;
 }
 
 /***CONTACT***/
 
 .cnt_5 {
-    height: 1050px;
+  height: 1050px;
 }
 
 .cnt_5 .block {
-    margin-top: 80px;
-    height: 820px;
+  margin-top: 80px;
+  height: 820px;
 }
 
-.adr, .wrk {
-    position: relative;
-    display: inline-block;
-    width: 49%;
-    height: 240px;
-    text-align: center;
+.adr,
+.wrk {
+  position: relative;
+  display: inline-block;
+  width: 49%;
+  height: 240px;
+  text-align: center;
+  letter-spacing: 0.5px;
+}
+
+.adr {
+  top: -25px;
 }
 
 .wrk {
-    top: -30px;
+  top: 20px;
 }
+
 .vl {
-    position: relative;
-    top: 0;
-    display: inline-block;
-    width: 1px;
-    height: 240px;
-    background-color: gray;
+  position: relative;
+  top: 0;
+  display: inline-block;
+  width: 1px;
+  height: 240px;
+  background-color: gray;
 }
 
-.adr h6, .wrk h6 {
-    top: 0;
-    color: #333333;
+.adr h6,
+.wrk h6 {
+  top: 0;
+  color: rgb(49, 49, 49);
 }
 
-.adr p, .wrk p {
-    font: normal normal normal 1.1em 'Open Sans', sans-serif;
-    color: gray;
-    margin-top: 10px;
+.adr a {
+  color: rgb(49, 49, 49);
+}
+
+.adr p,
+.wrk p {
+  font: normal normal normal 1.1em "Dosis", sans-serif;
+  color: rgb(49, 49, 49);
+  margin-top: 10px;
 }
 
 .fb {
-    width: 980px;
+  width: 980px;
 }
 
 .fb a {
-    display: block;
-    width: 50px;
-    height: 50px;
-    margin: 20px 0 0 46.77%;
+  display: block;
+  width: 50px;
+  height: 50px;
+  margin: 20px 0 0 46.77%;
 }
 
 .fb img {
-    width: 50px;
-    height: 50px;
+  width: 50px;
+  height: 50px;
 }
 
 .map {
-    display: inline-block;
-    height: 370px;
-    width: 100%;
-    margin-top: 80px;
+  display: inline-block;
+  height: 370px;
+  width: 100%;
+  margin-top: 80px;
 }
 
 .bottom_bar {
-    height: 10px;
+  height: 10px;
 }
 
 .line_2 {
-    height: 10px;
+  height: 10px;
 }
 
-.line_2 .el_1, .line_2 .el_2, .line_2 .el_3 {
-    height: 10px;
+.line_2 .el_1,
+.line_2 .el_2,
+.line_2 .el_3 {
+  height: 10px;
 }
-
 
 /*---------MODALS------------*/
 
 .modalDialog {
-    position: fixed;
-    font-family: Arial, Helvetica, sans-serif;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    background: rgba(222, 222, 222, 0.75);
-    z-index: 99999;
-    opacity:0;
-    -webkit-transition: opacity 400ms ease-in;
-    -moz-transition: opacity 400ms ease-in;
-    transition: opacity 400ms ease-in;
-    pointer-events: none;
+  position: fixed;
+  font-family: "Dosis", sans-serif;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: rgba(222, 222, 222, 0.75);
+  z-index: 999999;
+  opacity: 0;
+  -webkit-transition: opacity 400ms ease-in;
+  -moz-transition: opacity 400ms ease-in;
+  transition: opacity 400ms ease-in;
+  pointer-events: none;
 }
 
 .modalDialog:target {
-    opacity:1;
-    pointer-events: auto;
+  opacity: 1;
+  pointer-events: auto;
 }
 
 .modalDialog > div {
-    width: 50%;
-    height: 366px;
-    position: relative;
-    margin: 0 auto;
-    padding: 5px 20px 13px 20px;
-    background: rgba(255,255,255,1);
-    float: right;
+  width: 50%;
+  height: 366px;
+  position: relative;
+  margin: 0 auto;
+  padding: 5px 20px 13px 20px;
+  background: rgba(255, 255, 255, 1);
+  float: right;
 }
 
 .close {
-    display: block;
-    background: white;
-    color: #116089;
-    font-size: 1.1em;
-    line-height: 36px;
-    position: absolute;
-    right: 2%;
-    text-align: center;
-    top: 12px;
-    width: 36px;
-    border-radius: 18px;
-    margin-right: 6%;
-    text-decoration: none;
-    z-index: 999999;
-
+  display: block;
+  background: white;
+  color: #333333;
+  font-size: 1.1em;
+  line-height: 36px;
+  position: absolute;
+  right: 2%;
+  text-align: center;
+  top: 12px;
+  width: 36px;
+  border-radius: 18px;
+  margin-right: 6%;
+  text-decoration: none;
+  z-index: 9999999;
 }
 
 .close:hover {
-    background: #116089;
-    color: white;
+  background: #333333;
+  color: white;
 }
 
 .nav_4 {
-    display: block;
-    position: relative;
-    width: 100%;
-    top: 55px;
+  display: block;
+  position: relative;
+  width: 100%;
+  top: 55px;
 }
 
 .li_1 {
-    display: block;
-    border-top: 1px solid #116089;
+  display: block;
+  border-bottom: 0.5px solid #a8a8a8;
 }
 
 .li_1 a {
-    color: #116089;
+  color: #333333;
 }
 
 .li:hover {
-    color: white;
-    background: #116089
-}
-
-
-/*--------MEDIA QUERIES--------*/
-
-
-@media screen and (max-width: 480px){
-
-    body {
-        height: auto;
-    }
-
-
-    /*****HEADER****/
-
-
-
-    .header {
-        max-height: 175px;
-        max-width: 980px;
-    }
-
-    .logo {
-        width: 88px;
-        height: 88px;
-        display: block;
-        position: relative;
-        left: 4px;
-        background-image: url("../images/klo_sm.jpg");
-    }
-
-    .logo img {
-        display: none;
-    }
-
-    .headline {
-        width: 100%;
-    }
-
-    .head_right {
-        position: relative;
-        width: 280px;
-        float: right;
-        top: -150px;
-        margin-right: 4%;
-    }
-
-    .head_left {
-        width: 100%;
-        position: relative;
-        display: block;
-        top: -12px;
-
-    }
-
-    .head_left h6, h1 {
-        width: 100%;
-        text-align: center;
-        margin-right: 0;
-        margin-top: 12px;
-        font-weight: bolder;
-    }
-
-    .head_left h6 {
-        font-size: 1.1em;
-    }
-
-    .head_left h1 {
-        width: 100%;
-        float: right;
-        font-size: 160%;
-        text-align: center;
-        margin-top: 0;
-        color: white;
-        background-color: #116089;
-        padding-top: 15px;
-        padding-bottom: 15px;
-    }
-
-    .hamburger {
-        display: inline-block;
-        position: fixed;
-        width: 35px;
-        height: 35px;
-        top: 0px;
-        border-radius: 2px;
-        margin-top: 17px;
-        margin-left: 87%;
-        float: right;
-        z-index: 99999;
-    }
-
-    .stripe {
-        position: relative;
-        left: 2px;
-        width: 30px;
-        height: 5px;
-        margin-top: 3px;
-        background-color: #116089;
-        border: 1px solid white;
-    }
-
-    .nav_2 {
-        top: 280px;
-        width: 100%;
-    }
-
-    .rpr {
-        display: block;
-        width: 84%;
-        margin-left: 6%;
-        height: 60px;
-    }
-
-    #rpr_1, #rpr_2, #rpr_3 {
-        left: 2%;
-    }
-
-    .rpr a {
-        top: 0;
-    }
-
-    .rh_1 {
-        font-size: 1.4em;
-    }
-
-    .rh_2 {
-        font-size: 1.6em;
-    }
-
-    .nav {
-        display: none;
-    }
-
-
-
-    /*****CONTENT****/
-
-
-    .side_bar_container {
-        display: none;
-
-    }
-
-    #rpr_1, #gll_1 {
-        background-color: rgba(2, 184, 191, 0.8);
-        border-bottom: 7px solid rgba(2, 184, 191, 1);
-    }
-
-    #rpr_2, #gll_2 {
-        background-color: rgba(25, 144, 206, 0.8);
-        border-bottom: 7px solid rgba(25, 144, 206, 1);
-    }
-
-    #rpr_3, #gll_3 {
-        background-color: rgba(7, 188, 131, 0.8);
-        border-bottom: 7px solid rgba(7, 188, 131, 1);
-    }
-
-    .wrapper {
-        background-image: url("../images/ord1.jpg");
-        background-size: 160%;
-        height: 240px;
-        margin-bottom: 300px;
-    }
-
-    .overlay {
-        height: 200px;
-    }
-
-    .cnt_1, .cnt_2, .cnt_3, .cnt_4, .cnt_5, .cnt_6 {
-        width: 100%;
-    }
-
-    .block {
-        width: 84%;
-        margin-left: 8%;
-    }
-
-    .cnt_1 h2, .cnt_2 h2, .cnt_3 h2, .cnt_4 h2, .cnt_5 h2, .cnt_6 h2 {
-        width: 100%;
-        font-size: 1.8em;
-    }
-
-    .cnt_1 {
-        height: 800px;
-    }
-
-    .cnt_1 p {
-        width: 100%;
-        text-align: justify;
-        font-size: 1em;
-    }
-
-    .cnt_2 {
-        height: 1400px;
-    }
-
-    .srvc_r, .srvc_l, .srvc {
-        width: 100%;
-        float: none;
-    }
-
-    .srvc_r, .srvc_l {
-        height: auto;
-    }
-
-    .srvc_r p, .srvc_l p {
-        width: 88%;
-        margin-bottom: 10px;
-        font-size: 1em;
-    }
-
-    .srvc {
-        margin-top: 38px;
-    }
-
-    .cnt_6 {
-        height: 3000px;
-    }
-
-    .shld {
-        width: 100%;
-    }
-
-    .dot, .dot_2 {
-        border: none;
-        width: 100%;
-        height: 36px;
-    }
-
-    .shld .srvc_l, .shld .srvc_r {
-        height: auto;
-    }
-
-    #pregled, #protetika, #bolest, #decja, #oralna, #estetska, #paradont {
-        height: auto;
-    }
-
-    .pp_l {
-        width: 100% !important;
-    }
-
-    .dot_2 {
-        height: 60px;
-    }
-
-    .cnt_3 {
-        height: 950px;
-    }
-
-    .dr {
-        width: 100%;
-    }
-
-    .pic_1, .pic_2 {
-        width: 80%;
-        margin: 50px auto 0 10%;
-    }
-
-    .cnt_4 {
-        display: none;
-    }
-
-    .cnt_5 {
-        height: 1020px;
-    }
-
-    .adr, .wrk {
-        width: 100%;
-    }
-
-    .adr {
-        height: 320px;
-    }
-
-    .vl {
-        display: none;
-    }
-
-    .fb {
-        width: 100%;
-    }
-    .fb a {
-        margin: 0px 0 20px 43.27%;
-    }
-
-    .map {
-        height: 200px;
-        top: -40px;
-    }
-
-    .bottom_bar {
-        display: block;
-        position: relative;
-        height: 20px;
-    }
-
-
-
-}
-
-@media screen and (min-width: 481px) and (max-width: 810px) {
-
-    .header {
-        max-height: 155px;
-        max-width: 980px;
-    }
-
-    .logo {
-        width: 88px;
-        height: 88px;
-        display: block;
-        position: relative;
-        left: 4px;
-        background-image: url("../images/klo_sm.jpg");
-    }
-
-    .logo img {
-        display: none;
-    }
-
-    .headline {
-        width: 100%;
-        height: 55px;
-    }
-
-    .head_right {
-        position: relative;
-        width: 280px;
-        float: right;
-        top: -202px;
-        margin-right: 12%;
-    }
-
-    .head_left {
-        width: 100%;
-        position: relative;
-        display: block;
-        top: -75px;
-
-    }
-
-    .head_left h6, h1 {
-        width: 100%;
-        text-align: center;
-        margin-right: 0;
-        margin-top: 8px;
-        font-weight: bolder;
-    }
-
-    .head_left h6 {
-        font-size: 1.6em;
-    }
-
-    .head_left h1 {
-        width: 100%;
-        float: right;
-        font-size: 200%;
-        text-align: center;
-        margin-top: 0;
-        color: white;
-        background-color: #116089;
-        padding-top: 15px;
-        padding-bottom: 15px;
-    }
-
-    .hamburger {
-        display: inline-block;
-        position: fixed;
-        width: 35px;
-        height: 35px;
-        top: 0px;
-        border-radius: 2px;
-        margin-top: 17px;
-        margin-left: 91%;
-        z-index: 99999;
-    }
-
-    .stripe {
-        position: relative;
-        left: 2px;
-        width: 30px;
-        height: 5px;
-        margin-top: 3px;
-        background-color: #116089;
-        border: 1px solid white;
-    }
-
-    .nav_2 {
-        top: 250px;
-        width: 100%;
-    }
-
-    .rpr {
-        display: block;
-        width: 94%;
-        margin-left: 6%;
-        height: 60px;
-    }
-
-    #rpr_1, #rpr_2, #rpr_3 {
-        left: -3%;
-    }
-
-    .rpr a {
-        top: 0;
-    }
-
-    .rh_1, .rh_2 {
-        display: none;
-    }
-
-    .rh_3 {
-        display: block;
-        position: relative;
-        top: 12px;
-    }
-
-    .nav {
-        display: none;
-    }
-
-
-    /*****CONTENT****/
-
-    .side_bar_container {
-        display: none;
-    }
-    .sb {
-        margin-top: 10px;
-    }
-
-    .sb a {
-        height: 20px;
-        font-size: 16px;
-    }
-
-    #rpr_1, #gll_1 {
-        background-color: rgba(2, 184, 191, 0.8);
-        border-bottom: 7px solid rgba(2, 184, 191, 1);
-    }
-
-    #rpr_2, #gll_2 {
-        background-color: rgba(25, 144, 206, 0.8);
-        border-bottom: 7px solid rgba(25, 144, 206, 1);
-    }
-
-    #rpr_3, #gll_3 {
-        background-color: rgba(7, 188, 131, 0.8);
-        border-bottom: 7px solid rgba(7, 188, 131, 1);
-    }
-
-    .wrapper {
-        background-image: url("../images/ord1.jpg");
-        background-size: 160%;
-        height: 240px;
-        margin-bottom: 300px;
-    }
-
-    .overlay {
-        height: 200px;
-    }
-
-    .cnt_1, .cnt_2, .cnt_3, .cnt_4, .cnt_5, .cnt_6 {
-        width: 100%;
-    }
-
-    .block {
-        width: 84%;
-        margin-left: 8%;
-    }
-
-    .cnt_1 h2, .cnt_2 h2, .cnt_3 h2, .cnt_4 h2, .cnt_5 h2, .cnt_6 h2 {
-        width: 100%;
-        font-size: 1.8em;
-    }
-
-    .cnt_1 {
-        height: 450px;
-    }
-
-    .cnt_1 p {
-        width: 100%;
-        text-align: justify;
-        font-size: 1em;
-    }
-
-    .cnt_2 {
-        height: 1400px;
-    }
-
-    .srvc_r, .srvc_l, .srvc {
-        width: 100%;
-        float: none;
-    }
-
-    .srvc_r, .srvc_l {
-        height: auto;
-    }
-
-    .srvc_r p, .srvc_l p {
-        width: 88%;
-        margin-bottom: 10px;
-        font-size: 1em;
-    }
-
-    .srvc {
-        margin-top: 38px;
-    }
-
-    .cnt_6 {
-        height: 3000px;
-    }
-
-    .shld {
-        width: 100%;
-    }
-
-    .dot, .dot_2 {
-        border: none;
-        width: 100%;
-        height: 36px;
-    }
-
-    .shld .srvc_l, .shld .srvc_r {
-        height: auto;
-    }
-
-    #pregled, #protetika, #bolest, #decja, #oralna, #estetska, #paradont {
-        height: auto;
-    }
-
-    .pp_l {
-        width: 100% !important;
-    }
-
-    .dot_2 {
-        height: 60px;
-    }
-
-    .cnt_3 {
-        height: 950px;
-    }
-
-    .dr {
-        width: 100%;
-    }
-
-    .pic_1, .pic_2 {
-        width: 50%;
-        max-width: 250px;
-        margin: 50px auto 0 30%;
-    }
-
-    .cnt_4 {
-        display: none;
-    }
-
-    .cnt_5 {
-        height: 1020px;
-    }
-
-    .adr, .wrk {
-        width: 100%;
-    }
-
-    .adr {
-        height: 320px;
-    }
-
-    .vl {
-        display: none;
-    }
-
-    .fb {
-        width: 100%;
-    }
-    .fb a {
-        margin: 0 auto;
-    }
-    .map {
-        height: 200px;
-        top: -50px;
-    }
-
-    .bottom_bar {
-        position: relative;
-        top: 25px;
-    }
-
-
-    /*---------MODALS------------*/
-
-    .modalDialog > div {
-        width: 30%;
-    }
-
-    .li_1 {
-        padding: 5px;
-    }
-
-
-
-
-}
-
-@media screen and (min-width: 810px) and (max-width: 1024px) {
-
-    .header {
-        max-height: 155px;
-        max-width: 810px;
-    }
-
-    .nav_2, h2, .block {
-        width: 810px;
-    }
-
-    .overlay {
-        height: 200px;
-    }
-
-    .cnt_1, .cnt_2, .cnt_3, .cnt_4, .cnt_5, .cnt_6 {
-        width: 100%;
-    }
-
-    .block {
-        width: 810px;
-        margin: 0 auto;
-    }
-
-    .cnt_1 h2, .cnt_2 h2, .cnt_3 h2, .cnt_4 h2, .cnt_5 h2, .cnt_6 h2 {
-        width: 100%;
-        font-size: 1.8em;
-    }
-
-    .cnt_1 {
-        height: 450px;
-    }
-
-    .cnt_1 p {
-        width: 100%;
-        text-align: justify;
-        font-size: 1em;
-    }
-
-    .cnt_2 {
-        height: 1200px;
-    }
-
-    .srvc_r, .srvc_l, .srvc {
-        width: 100%;
-        float: none;
-    }
-
-    .srvc_r, .srvc_l {
-        height: auto;
-    }
-
-    .srvc_r p, .srvc_l p {
-        width: 88%;
-        margin-bottom: 10px;
-        font-size: 1em;
-    }
-
-    .srvc {
-        margin-top: 38px;
-    }
-
-    .cnt_6 {
-        height: 3000px;
-    }
-
-    .shld {
-        width: 100%;
-    }
-
-    .dot, .dot_2 {
-        border: none;
-        width: 100%;
-        height: 36px;
-    }
-
-    .shld .srvc_l, .shld .srvc_r {
-        height: auto;
-    }
-
-    #pregled, #protetika, #bolest, #decja, #oralna, #estetska, #paradont {
-        height: auto;
-    }
-
-    .pp_l {
-        width: 100% !important;
-    }
-
-    .dot_2 {
-        height: 60px;
-    }
-
-    .cnt_3 {
-        height: 550px;
-    }
-
-    .dr {
-        width: 49%;
-    }
-
-    .pic_1, .pic_2 {
-        width: 222px;
-        margin: 50px auto 0 21%;
-        border-bottom: 8px solid rgba(2, 184, 191, 1);
-    }
-
-    .pic_2 {
-
-        border-bottom: 8px solid rgba(7, 188, 131, 1);
-    }
-
-    .cnt_4 {
-        display: block;
-        height: 1000px;
-    }
-
-    .cnt_5 {
-        height: 920px;
-    }
-
-    .nav_3 {
-        width: 810px;
-    }
-
-    .track {
-        width: 810px;
-    }
-
-    .prew img {
-        width: 810px;
-    }
-
-    h2 {
-        max-width: 810px
-    }
-
-    .content {
-        width: 100%;
-        margin: 0 auto;
-    }
-
-    .bottom_bar {
-        width: auto;
-    }
-
-    .wrapper {
-        wudth: auto;
-    }
-
-    .cnt_1, .cnt_2, .cnt_3, .cnt_4, .cnt_5, .cnt_6 {
-        width: 100%;
-    }
-
-    .cnt_5 {
-        height: 1020px;
-    }
-
-    .fb {
-        width: 810px;
-    }
-    .fb a {
-        margin: 20px 0 0 46.27%;
-    }
+  color: white;
+  background: #333333;
 }
