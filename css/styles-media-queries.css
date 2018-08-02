@@ -704,7 +704,7 @@
             position: unset;
         }
         #section-tim {
-            margin-top: 1700px;
+            margin-top: 1750px;
         }
         #rpr_1,
         #gll_1 {
@@ -933,6 +933,9 @@
         #section-tim {
             margin-top: 1950px;
         }
+        .en-responsive {
+            margin-top: 1700px!important;
+        }
         .biografija p {
             width: 90%;
             font-size: 1em;
@@ -959,13 +962,19 @@
         #section-tim {
             margin-top: 2155px;
         }
+        .en-responsive {
+            margin-top: 1700px!important;
+        }
     }
 }
 
 @media screen and (max-width: 320px) {
     @supports (display: flex) {
         #section-tim {
-            margin-top: 2350px;
+            margin-top: 2200px;
+        }
+        .en-responsive {
+            margin-top: 1800px!important;
         }
     }
 }
