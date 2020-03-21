@@ -8,7 +8,9 @@ if(modal) {
     // create reference to modal close button element
     const closeButton = document.getElementById("covid-close-btn");
     // add event listener to close button
-    closeButton.addEventListener("click", () => {
+    closeButton.addEventListener("click", e => {
+        //prevent default behaviour
+        e.preventDefault();
         //hide modal
         modal.style.display = "none";
         //reset body overflow so page could scroll once modal is hidden
