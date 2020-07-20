@@ -630,12 +630,40 @@ button :hover,
   padding-bottom: 2vw;
 }
 
+#pregled_en {
+  height: 120px;
+}
+
+#protetika1_en {
+  height: 400px;
+}
+
+#bolest_en {
+  height: 435px;
+}
+
+#oralna_en {
+  height: 285px;
+}
+
+#decja_en {
+  height: 180px;
+}
+
+#estetska1_en {
+  height: 200px;
+}
+
+#paradont_en {
+  height: 270px;
+}
+
 #pregled {
-  height: 60px;
+  height: 75px;
 }
 
 #bolest {
-  height: 470px;
+  height: 720px;
 }
 
 #estetska1 {
@@ -643,19 +671,19 @@ button :hover,
 }
 
 #paradont {
-  height: 170px;
+  height: 270px;
 }
 
 #decja {
-  height: 160px;
+  height: 260px;
 }
 
 #oralna {
-  height: 114px;
+  height: 130px;
 }
 
 #protetika1 {
-  height: 480px;
+  height: 550px;
 }
 
 #hijaluron {
@@ -671,7 +699,7 @@ button :hover,
 }
 
 .dot_2 {
-  height: 36px;
+  height: 38px;
 }
 
 .shld .pp_l,
