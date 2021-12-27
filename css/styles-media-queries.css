@@ -17,6 +17,7 @@
             font-size: 3em;
         }
         .head_right p,
+        .head_right_en p,
         .nav a,
         .lang a,
         .side_bar a:link,
@@ -86,6 +87,7 @@
             font-size: 3em;
         }
         .head_right p,
+        .head_right_en p,
         .nav a,
         .lang a,
         .side_bar a:link,
@@ -179,7 +181,8 @@
         .head_left img {
             width: 75%;
         }
-        .head_right {
+        .head_right,
+        .head_right_en {
             margin-right: 50px;
             margin-top: 7%;
         }
@@ -313,7 +316,13 @@
             width: 85%;
             margin-right: 10px;
         }
-        .head_right {
+
+        .head_right_en {
+            display: none;
+        }
+
+        .head_right,
+        .head_right_en_res {
             display: flex;
             order: 2;
             width: 90%;
@@ -326,9 +335,10 @@
             justify-content: space-around;
             align-self: flex-start;
         }
-        .head_right p {
+        .head_right p,
+        .head_right_en_res p {
             display: flex;
-            width: 100%;
+            width: 90px;
             font-size: 1em;
             letter-spacing: 0px;
             font-weight: lighter;
@@ -339,6 +349,11 @@
             color: rgb(49, 49, 49);
             border-top: 2px solid rgba(2, 184, 191, 1);
         }
+
+        .head_right_en_res p {
+            width: 120px;
+        }
+
         #nav_bar_container,
         .nav_bar {
             display: none;
@@ -566,6 +581,10 @@
         .block_team {
             margin-left: 0px;
         }
+        .biografija {
+            margin-top: 100px;
+        }
+
         .biografija p {
             margin-top: -3.5em;
         }
@@ -575,6 +594,8 @@
         .dr h6 {
             margin-left: 0px;
             text-align: left;
+            font-size: 22px;
+            width: 90%;
         }
         #section-galerija {
             align-items: center;
@@ -636,6 +657,10 @@
         }
         .fb a {
             margin: 0px 0 20px 45.27%;
+        }
+
+        #section-tim {
+            margin-top: 2200px;
         }
     }
 }
@@ -704,7 +729,7 @@
             position: unset;
         }
         #section-tim {
-            margin-top: 1750px;
+            margin-top: 2100px;
         }
         #rpr_1,
         #gll_1 {
@@ -926,15 +951,20 @@
         }*/
         .head_right p {
             font-size: 0.8em;
+            width: 72px;
+        }
+        .head_right_en_res p {
+            font-size: 0.8em;
+            width: 100px;
         }
         .cnt_1 {
             margin-top: 150px;
         }
         #section-tim {
-            margin-top: 1950px;
+            margin-top: 2250px;
         }
         .en-responsive {
-            margin-top: 1700px!important;
+            margin-top: 2250px!important;
         }
         .biografija p {
             width: 90%;
@@ -960,10 +990,10 @@
 @media screen and (min-width: 321px) and (max-width: 400px) {
     @supports (display: flex) {
         #section-tim {
-            margin-top: 2155px;
+            margin-top: 2650px;
         }
         .en-responsive {
-            margin-top: 1700px!important;
+            margin-top: 2450px!important;
         }
     }
 }
@@ -971,10 +1001,25 @@
 @media screen and (max-width: 320px) {
     @supports (display: flex) {
         #section-tim {
-            margin-top: 2200px;
+            margin-top: 2900px;
         }
         .en-responsive {
-            margin-top: 1800px!important;
+            margin-top: 2750px!important;
+        }
+        .head_right_en_res p {
+            font-size: 0.7em;
+            width: 80px;
+        }
+    }
+}
+
+@media screen and (max-width: 280px) {
+    @supports (display: flex) {
+        #section-tim {
+            margin-top: 3200px;
+        }
+        .en-responsive {
+            margin-top: 3000px!important;
         }
     }
 }

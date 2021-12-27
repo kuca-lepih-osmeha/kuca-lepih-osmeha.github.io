@@ -100,7 +100,12 @@ body {
   height: auto;
 }
 
-.head_right {
+.head_right_en_res {
+  display: none;
+}
+
+.head_right,
+.head_right_en {
   order: 2;
   width: 40%;
   /*align-self: flex-end;*/
@@ -119,7 +124,8 @@ h6 {
   display: none;
 }
 
-.head_right p {
+.head_right p,
+.head_right_en p {
   color: rgba(25, 144, 206, 1);
   align-self: flex-end;
   width: 100%;
