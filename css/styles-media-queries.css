@@ -67,6 +67,10 @@
         .fb a {
             margin-left: 57%;
         }
+
+        .wrk {
+            top: -100px;
+        }
     }
 }
 
@@ -137,6 +141,10 @@
         .fb a {
             margin-left: 57%;
         }
+
+        .wrk {
+            top: -100px;
+        }
     }
 }
 
@@ -159,6 +167,10 @@
         .logo img {
             margin-top: 5%;
         }
+
+        .wrk {
+            top: -100px;
+        }
     }
 }
 
@@ -172,6 +184,10 @@
         }
         .block_team {
             margin-left: 5%;
+        }
+
+        .wrk {
+            top: -100px;
         }
     }
 }
@@ -940,6 +956,10 @@
             display: block;
             position: relative;
             height: 20px;
+        }
+
+         .wrk {
+            top: 20px;
         }
     }
 }
